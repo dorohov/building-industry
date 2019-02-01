@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
-<body>
+<body class="presscroll">
     <header>
-        <div class="navbar">
+        <div class="navbar is--open">
             <div class="navbar__inner">
                 <div class="navbar__logo">
                     <a href="index.html" class="navbar__logo__link">
@@ -20,15 +20,85 @@
                         </svg>
                     </a>
                 </div>
-                <div class="navbar__menu">dasd</div>
+                <div class="navbar__content">
+                    <div class="navbar__content__menu">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Дома</a></li>
+                            <li><a href="#">Пункт</a></li>
+                            <li><a href="#">Еще пункт</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="navbar__content__first">
+                        <div class="navbar__content__block">
+                            <a href="mailto:sales.osi@orelstroy.ru">
+                                <div class="navbar__content__block__i">
+                                    <svg class="svg-mail-dims svg is--mail">
+                                        <use xlink:href="img/svg/sprites.svg#mail"></use>
+                                    </svg>
+                                </div>
+                                <div class="navbar__content__block__t">sales.osi@orelstroy.ru</div>
+                            </a>
+                        </div>
+                        <div class="navbar__content__block">
+                            <a href="tel:84862782636">
+                                <div class="navbar__content__block__i">
+                                    <svg class="svg-phone-dims svg is--phone">
+                                        <use xlink:href="img/svg/sprites.svg#phone"></use>
+                                    </svg>
+                                </div>
+                                <div class="navbar__content__block__t">+7 (4862) <span class="is--b">78-26-36</span></div>
+                            </a>
+                        </div>
+                        <div class="navbar__content__block is--cart">
+                            <a href="#">
+                                <div class="navbar__content__block__i">
+                                    <svg class="svg-cart-dims svg is--cart">
+                                        <use xlink:href="img/svg/sprites.svg#cart"></use>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="navbar__menu">
+                    <div class="navbar__menu__btn">
+                        <button class="hamburger hamburger--collapse" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="in-slide1 slide">
+        <div class="in-slide1 slide" id="in-sl1">
+            <div class="in-slide1__inner">
 
+                <div class="in-slide1__title">Материалы для промышленного и гражданского строительства</div>
+                <div class="in-slide1__desc is--id1">ЖБИ, КПД, асфальтобетон, вибропреcсованные изделия, изделия из ПВХ, раствор и бетон</div>
+                <div class="in-slide1__btn">
+                    <a href="#" class="button">Оставить заявку</a>
+                </div>
+
+            </div>
+            <div class="in-slide1__down">
+                <div class="down-link">
+                    <div class="down-link__inner">
+                        <a href="#">Вниз</a>
+                    </div>
+                </div>
+            </div>
+            <div class="in-slide1__nums"></div>
         </div>
     </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/mousewheel.js"></script>
+    <script src="dist/js/main.js"></script>
     <script src="dist/js/svg4everybody.min.js"></script>
     <script>
         svg4everybody();

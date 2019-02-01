@@ -18,6 +18,7 @@ var gulp = require('gulp'),
 	cheerio = require('gulp-cheerio'),
 	replace = require('gulp-replace'),
     minify = require('gulp-minify'),
+    strip_comments = require('gulp-strip-json-comments'),
     htmlbeautify = require('gulp-html-beautify'),
     sourcemaps = require('gulp-sourcemaps');
 
@@ -41,6 +42,7 @@ function css() {
             .pipe(sass().on('error', function(error) {
                 console.log(error)
             }))
+            .pipe(strip_comments())
             .pipe(minifyCSS())
             .pipe(autoprefixer({browsers: ['> 2% in RU', 'last 4 version', 'ie 9', 'opera 12.1', 'ios 6', 'android 4']}))
             .pipe(gulp.dest('dist/css'))

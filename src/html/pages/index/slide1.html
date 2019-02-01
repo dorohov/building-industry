@@ -1,3 +1,21 @@
-<div class="in-slide1 slide">
-
+<div class="in-slide1 slide" id="in-sl1">
+    <div class="in-slide1__inner">
+        @@if(content_id == 1) {
+            <div class="in-slide1__title">Материалы для промышленного и гражданского строительства</div>
+            <div class="in-slide1__desc is--id@@content_id">ЖБИ, КПД, асфальтобетон, вибропреcсованные изделия, изделия из ПВХ, раствор и бетон</div>
+            <div class="in-slide1__btn">
+                @@include('../../items/button.html', {
+                    "url": "#",
+                    "text": "Оставить заявку",
+                    "type": "default"
+                })
+            </div>
+        }
+    </div>
+    <div class="in-slide1__down">
+        @@include('../../items/down-link.html', {
+            "url": "#"
+        })
+    </div>
+    <div class="in-slide1__nums"></div>
 </div>

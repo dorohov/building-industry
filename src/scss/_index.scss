@@ -1,6 +1,7 @@
 .in {
     &-slide1 {
         background-image: url(../../img/in-slide1-bg.jpg);
+        display: flex;
         &::before {
             background: #1F5087;
             width: 100%;
@@ -11,6 +12,91 @@
             top: 0;
             content: '';
             mix-blend-mode: multiply;
+            z-index: 10;
+        }
+        &::after {
+            background: #1F5087;
+            width: 100%;
+            max-width: 500px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            content: '';
+            mix-blend-mode: multiply;
+            z-index: 10;
+        }
+        &__inner {
+            @extend .container;
+            padding-top: 150px;
+            position: relative;
+            z-index: 15;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__title {
+            color: #fff;
+            max-width: 1250px;
+            width: 100%;
+            line-height: 100px;
+            font-size: 75px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 35px;
+        }
+        &__desc {
+            line-height: 22px;
+            font-size: 18px;
+            color: #fff;
+            font-weight: normal;
+            font-family: 'Open Sans';
+            max-width: 800px;
+            margin-bottom: 75px;
+            &.is--id1 {
+                text-transform: uppercase;
+                max-width: 100%;
+                font-size: 24px;
+                
+            }
+        }
+        &__down {
+            position: absolute;
+            left: 0;
+            bottom: 90px;
+            z-index: 500;
+            display: flex;
+            @extend .container;
+            right: 0;
+        }
+    }
+}
+
+.down-link {
+    &__inner {
+        transform: rotate(-90deg);
+        a {
+            color: #fff;
+            text-decoration: none;
+            line-height: 36px;
+            font-size: 18px;
+            letter-spacing: 0.11em;
+            text-transform: uppercase;
+            position: relative;
+            display: block;
+            &::before {
+                content: url(../../img/svg/down_arr.svg);
+                position: absolute;
+                fill: #fff;
+                color: #fff;
+                z-index: 99999999999;
+                display: block;
+                transform: rotate(90deg);
+                left: -20px;
+            }
         }
     }
 }

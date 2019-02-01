@@ -6,11 +6,25 @@ header {
     z-index: 999;
     &.is--bg {
         background: $primary-color;
-        position: static;
+        .navbar {
+            &__content {
+                &__block {
+                    &.is--cart {
+                        margin-right: 80px;
+                    }
+                }
+            }
+        }
     }
 }
 
 .navbar {
+    &.is--open {
+        .navbar__content__menu,
+        .navbar__content__first {
+            transform: translateY(0);
+        }
+    }
     &__inner {
         height: 150px;
         display: flex;
@@ -28,8 +42,105 @@ header {
             background: #fff;
         }
     }
+    &__content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        position: relative;
+        z-index: 999;
+        &__first {
+            display: flex;
+            height: 100%;
+            margin-left: auto;
+            transform: translateY(-100%);
+            transition: .25s all ease;
+        }
+        &__menu {
+            height: 100%;
+            width: 100%;
+            // background: $primary-color;
+            background: #fff;
+            transform: translateY(-100%);
+            transition: .25s all ease;
+            ul {
+                height: 100%;
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    height: 100%;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        color: #000;
+                        font-size: 18px;
+                        letter-spacing: 0.02em;
+                        text-decoration: none;
+                        padding: 0 20px;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        &__block {
+            height: 100%;
+            margin-right: 60px;
+            a {
+                text-decoration: none;
+                color: #fff;
+                display: flex;
+                height: 100%;
+                align-items: center;
+            }
+            &__i {
+                margin-right: 8px;
+                margin-top: 5px;
+            }
+            &__t {
+                font-size: 18px;
+                letter-spacing: 0.02em;
+                span {
+                    &.is--b {
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                }
+            }
+            &.is--cart {
+                margin-right: 350px;
+            }
+        }
+    }
     &__menu {
         max-width: 230px;
         width: 100%;
+        height: 100%;
+        background: #fff;
+        &__btn {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            z-index: 200;
+            &::after {
+                content: 'МЕНЮ';
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 97px;
+                letter-spacing: 0.19em;
+                color: rgba(255, 255, 255, 0.2);
+                left: -70%;
+                line-height: 97px;
+                bottom: -70px;
+                z-index: -3;
+                position: absolute;
+            }
+            .hamburger {
+                width: 100%;
+                height: 100%;
+                outline: none;
+            }
+        }
     }
 }
