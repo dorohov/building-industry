@@ -1,0 +1,16 @@
+.in {
+    &-slide1 {
+        background-image: url(../../img/in-slide1-bg.jpg);
+        &::before {
+            background: #1F5087;
+            width: 100%;
+            max-width: 360px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            content: '';
+            mix-blend-mode: multiply;
+        }
+    }
+}

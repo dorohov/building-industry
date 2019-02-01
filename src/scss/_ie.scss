@@ -1,0 +1,10 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .in {
+        &-slide1 {
+            &::before,
+            &::after {
+                background: rgba(#001528, .5) !important;
+            }
+        }
+    }
+}

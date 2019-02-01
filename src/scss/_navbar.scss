@@ -1,0 +1,35 @@
+header {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    &.is--bg {
+        background: $primary-color;
+        position: static;
+    }
+}
+
+.navbar {
+    &__inner {
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        max-width: 360px;
+        width: 100%;
+        &__link {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+        }
+    }
+    &__menu {
+        max-width: 230px;
+        width: 100%;
+    }
+}

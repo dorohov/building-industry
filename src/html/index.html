@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>4rmt-builder</title>
-    <link rel="stylesheet" href="dist/css/style.css">
+    @@include('main/head.html', {"title": "Главная"})
 </head>
 <body>
-    @@include('a/a.html')
-    @@include('a/b.html')
+    <header>
+        @@include('main/navbar.html')
+    </header>
+    <main>
+        @@include('pages/index/index.html')
+    </main>
+    @@include('main/footer.html')
 </body>
 </html>
