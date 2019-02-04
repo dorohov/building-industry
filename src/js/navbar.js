@@ -4,13 +4,14 @@
 
         var items = {
             button: ".navbar__menu__btn button",
-            menu: ".navbar__content__menu",
+            menu: ".navbar__menu",
             navbar: ".navbar"
         }
 
         $(items.button).on('click', function() {
-            $(items.navbar).toggleClass('is--open')
-            console.log("debug")
+            $('body').toggleClass('is--menu-open')
+            $(items.menu).toggleClass('is--open')
+            $(items.button).toggleClass('is-active')
         })
 
     })

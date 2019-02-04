@@ -1,4 +1,4 @@
-<div class="navbar is--open">
+<div class="navbar">
     <div class="navbar__inner">
         <div class="navbar__logo">
             <a href="index.html" class="navbar__logo__link">
@@ -6,49 +6,52 @@
             </a>
         </div>
         <div class="navbar__content">
-            <div class="navbar__content__menu">
-                <ul>
-                    <li><a href="#">Главная</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Дома</a></li>
-                    <li><a href="#">Пункт</a></li>
-                    <li><a href="#">Еще пункт</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
+            <div class="navbar__content__block">
+                <a href="mailto:sales.osi@orelstroy.ru">
+                    <div class="navbar__content__block__i">
+                        @@include('../items/svg.html', {"name": "mail"})
+                    </div>
+                    <div class="navbar__content__block__t">sales.osi@orelstroy.ru</div>
+                </a>
             </div>
-            <div class="navbar__content__first">
-                <div class="navbar__content__block">
-                    <a href="mailto:sales.osi@orelstroy.ru">
-                        <div class="navbar__content__block__i">
-                            @@include('../items/svg.html', {"name": "mail"})
-                        </div>
-                        <div class="navbar__content__block__t">sales.osi@orelstroy.ru</div>
-                    </a>
-                </div>
-                <div class="navbar__content__block">
-                    <a href="tel:84862782636">
-                        <div class="navbar__content__block__i">
-                            @@include('../items/svg.html', {"name": "phone"})
-                        </div>
-                        <div class="navbar__content__block__t">+7 (4862) <span class="is--b">78-26-36</span></div>
-                    </a>
-                </div>
-                <div class="navbar__content__block is--cart">
-                    <a href="#">
-                        <div class="navbar__content__block__i">
-                            @@include('../items/svg.html', {"name": "cart"})
-                        </div>
-                    </a>
-                </div>
+            <div class="navbar__content__block">
+                <a href="tel:84862782636">
+                    <div class="navbar__content__block__i">
+                        @@include('../items/svg.html', {"name": "phone"})
+                    </div>
+                    <div class="navbar__content__block__t">+7 (4862) <span class="is--b">78-26-36</span></div>
+                </a>
+            </div>
+            <div class="navbar__content__block is--cart">
+                <a href="#">
+                    <div class="navbar__content__block__i">
+                        @@include('../items/svg.html', {"name": "cart"})
+                    </div>
+                </a>
             </div>
         </div>
         <div class="navbar__menu">
             <div class="navbar__menu__btn">
-                <button class="hamburger hamburger--collapse" type="button">
+                <button class="hamburger hamburger--minus" type="button">
                     <span class="hamburger-box">
                       <span class="hamburger-inner"></span>
                     </span>
                   </button>
+            </div>
+            <div class="navbar__menu__container">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">ЖБИ</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">Объекты</a></li>
+                    <li><a href="#">История</a></li>
+                    <li><a href="#">Производство</a></li>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Документы</a></li>
+                    <li><a href="#">Продукция</a></li>
+                    <li><a href="#">Корзина</a></li>
+                </ul>
             </div>
         </div>
     </div>

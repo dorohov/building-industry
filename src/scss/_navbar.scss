@@ -3,7 +3,7 @@ header {
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 999;
+    z-index: 1999;
     &.is--bg {
         background: $primary-color;
         .navbar {
@@ -19,10 +19,18 @@ header {
 }
 
 .navbar {
-    &.is--open {
-        .navbar__content__menu,
-        .navbar__content__first {
-            transform: translateY(0);
+    &.is--idark {
+        .navbar {
+            &__content {
+                &__block {
+                    a {
+                        color: #000;
+                    }
+                    svg {
+                        fill: #000;
+                    }
+                }
+            }
         }
     }
     &__inner {
@@ -48,6 +56,7 @@ header {
         flex-wrap: wrap;
         overflow: hidden;
         position: relative;
+        justify-content: flex-end;
         z-index: 999;
         &__first {
             display: flex;
@@ -97,10 +106,14 @@ header {
             &__i {
                 margin-right: 8px;
                 margin-top: 5px;
+                svg {
+                    transition: .25s all ease;
+                }
             }
             &__t {
                 font-size: 18px;
                 letter-spacing: 0.02em;
+                transition: .25s all ease;
                 span {
                     &.is--b {
                         font-size: 24px;
@@ -109,20 +122,44 @@ header {
                 }
             }
             &.is--cart {
-                margin-right: 350px;
+                margin-right: 110px;
             }
         }
     }
     &__menu {
-        max-width: 230px;
+        max-width: 400px;
         width: 100%;
         height: 100%;
-        background: #fff;
+        transition: .25s all ease;
+        right: 0;
+        display: flex;
+        flex-wrap: wrap;
+        &.is--open {
+            max-width: 400px;
+            .navbar__menu {
+                &__btn {
+                    width: 100%;
+                    &::after {
+                        content: none;
+                    }
+                }
+                &__container {
+                    visibility: visible;
+                    transform: scale(1);
+                    width: 400px;
+                    opacity: 1;
+                    top: 150px;
+                }
+            }      
+        }
         &__btn {
             height: 100%;
-            width: 100%;
+            width: 230px;
             position: relative;
             z-index: 200;
+            background: #fff;
+            transition: .25s all ease;
+            margin-left: auto;
             &::after {
                 content: 'МЕНЮ';
                 text-transform: uppercase;
@@ -140,6 +177,110 @@ header {
                 width: 100%;
                 height: 100%;
                 outline: none;
+            }
+        }
+        &__container {
+            height: calc(100vh - 150px);
+            right: 0;
+            top: 0;
+            transform-origin: right top;
+            transform: scale(0);
+            background: #fff;
+            width: 100%;
+            transition: all 0.4s ease-in-out;
+            visibility: hidden;
+            opacity: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            ul {
+                margin: -150px 0 0 0;
+                padding:0;
+                list-style: none;
+                width: 100%;
+                li {
+                    width: 100%;
+                    a {
+                        text-decoration: none;
+                        color: #000;
+                        font-size: 22px;
+                        line-height: 24px;
+                        padding: 15px 30px 15px 30px;
+                        display: block;
+                        text-align: center;
+                        &:hover {
+                            color: $primary-color;
+                        }   
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+    .navbar {
+        &__content {
+            padding: 0 30px;
+            &__block {
+                margin-right: 20px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1400) {
+    .navbar {
+        &__content {
+            display: none;
+        }
+        &__menu {
+            &__btn {
+                &::after {
+                    content: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1025) {
+    .navbar {
+        background: #fff;
+        &__inner {
+            height: 70px;
+            justify-content: space-between;
+        }
+        &__logo {
+            padding: 0 15px;
+            max-width: 100%;
+            width: auto;
+            .svg-logo-dims {
+                height: 50px;
+                width: 58px;
+            }
+        }
+        &__menu {
+            max-width: 100%;
+            width: auto;
+            &__btn {
+                width: auto;
+                margin-left: 0;
+            }
+            &__container {
+                position: fixed;
+                width: 100% !important;
+                align-items: flex-start;
+                top: 70px !important;
+                height: calc(100vh - 70px);
+                ul {
+                    margin-top: 0;
+                    li {
+                        a {
+                            padding: 10px 0;
+                        }
+                    }
+                }
             }
         }
     }

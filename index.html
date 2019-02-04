@@ -11,7 +11,7 @@
 
 <body class="presscroll">
     <header>
-        <div class="navbar is--open">
+        <div class="navbar">
             <div class="navbar__inner">
                 <div class="navbar__logo">
                     <a href="index.html" class="navbar__logo__link">
@@ -21,55 +21,58 @@
                     </a>
                 </div>
                 <div class="navbar__content">
-                    <div class="navbar__content__menu">
-                        <ul>
-                            <li><a href="#">Главная</a></li>
-                            <li><a href="#">О компании</a></li>
-                            <li><a href="#">Дома</a></li>
-                            <li><a href="#">Пункт</a></li>
-                            <li><a href="#">Еще пункт</a></li>
-                            <li><a href="#">Контакты</a></li>
-                        </ul>
+                    <div class="navbar__content__block">
+                        <a href="mailto:sales.osi@orelstroy.ru">
+                            <div class="navbar__content__block__i">
+                                <svg class="svg-mail-dims svg is--mail">
+                                    <use xlink:href="img/svg/sprites.svg#mail"></use>
+                                </svg>
+                            </div>
+                            <div class="navbar__content__block__t">sales.osi@orelstroy.ru</div>
+                        </a>
                     </div>
-                    <div class="navbar__content__first">
-                        <div class="navbar__content__block">
-                            <a href="mailto:sales.osi@orelstroy.ru">
-                                <div class="navbar__content__block__i">
-                                    <svg class="svg-mail-dims svg is--mail">
-                                        <use xlink:href="img/svg/sprites.svg#mail"></use>
-                                    </svg>
-                                </div>
-                                <div class="navbar__content__block__t">sales.osi@orelstroy.ru</div>
-                            </a>
-                        </div>
-                        <div class="navbar__content__block">
-                            <a href="tel:84862782636">
-                                <div class="navbar__content__block__i">
-                                    <svg class="svg-phone-dims svg is--phone">
-                                        <use xlink:href="img/svg/sprites.svg#phone"></use>
-                                    </svg>
-                                </div>
-                                <div class="navbar__content__block__t">+7 (4862) <span class="is--b">78-26-36</span></div>
-                            </a>
-                        </div>
-                        <div class="navbar__content__block is--cart">
-                            <a href="#">
-                                <div class="navbar__content__block__i">
-                                    <svg class="svg-cart-dims svg is--cart">
-                                        <use xlink:href="img/svg/sprites.svg#cart"></use>
-                                    </svg>
-                                </div>
-                            </a>
-                        </div>
+                    <div class="navbar__content__block">
+                        <a href="tel:84862782636">
+                            <div class="navbar__content__block__i">
+                                <svg class="svg-phone-dims svg is--phone">
+                                    <use xlink:href="img/svg/sprites.svg#phone"></use>
+                                </svg>
+                            </div>
+                            <div class="navbar__content__block__t">+7 (4862) <span class="is--b">78-26-36</span></div>
+                        </a>
+                    </div>
+                    <div class="navbar__content__block is--cart">
+                        <a href="#">
+                            <div class="navbar__content__block__i">
+                                <svg class="svg-cart-dims svg is--cart">
+                                    <use xlink:href="img/svg/sprites.svg#cart"></use>
+                                </svg>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="navbar__menu">
                     <div class="navbar__menu__btn">
-                        <button class="hamburger hamburger--collapse" type="button">
+                        <button class="hamburger hamburger--minus" type="button">
                             <span class="hamburger-box">
                                 <span class="hamburger-inner"></span>
                             </span>
                         </button>
+                    </div>
+                    <div class="navbar__menu__container">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">ЖБИ</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Объекты</a></li>
+                            <li><a href="#">История</a></li>
+                            <li><a href="#">Производство</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Документы</a></li>
+                            <li><a href="#">Продукция</a></li>
+                            <li><a href="#">Корзина</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -82,18 +85,113 @@
                 <div class="in-slide1__title">Материалы для промышленного и гражданского строительства</div>
                 <div class="in-slide1__desc is--id1">ЖБИ, КПД, асфальтобетон, вибропреcсованные изделия, изделия из ПВХ, раствор и бетон</div>
                 <div class="in-slide1__btn">
-                    <a href="#" class="button">Оставить заявку</a>
+                    <a href="#" class="button is--default">Оставить заявку</a>
                 </div>
 
             </div>
             <div class="in-slide1__down">
                 <div class="down-link">
                     <div class="down-link__inner">
-                        <a href="#">Вниз</a>
+                        <a data-anchorid="#in-sl2" class="is--default anchor-target">Вниз</a>
                     </div>
                 </div>
             </div>
-            <div class="in-slide1__nums"></div>
+            <div class="in-slide1__nums">
+                <ul class="snums is--ver">
+                    <li>01</li>
+                    <li>02</li>
+                    <li>03</li>
+                </ul>
+            </div>
+        </div>
+        <div class="in-slide2 slide" id="in-sl2">
+            <div class="in-slide2__inner">
+                <div class="in-slide2__blocks">
+                    <div class="in-slide2__block is--bold is--top">
+                        <div class="in-slide2__block__inner">
+                            <div class="in-slide2__block__title">75 лет</div>
+                            <div class="in-slide2__block__desc">производим и проектируем железобетонные изделия</div>
+                            <div class="in-slide2__block__link">
+                                <a href="#">Услуги</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="in-slide2__block is--bold is--top">
+                        <div class="in-slide2__block__inner">
+                            <div class="in-slide2__block__title">500</div>
+                            <div class="in-slide2__block__desc">типовых <br> конструкций</div>
+                            <div class="in-slide2__block__link">
+                                <a href="#">Продукция</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="in-slide2__block is--bold is--top">
+                        <div class="in-slide2__block__inner">
+                            <div class="in-slide2__block__title">3 000</div>
+                            <div class="in-slide2__block__desc">реализованных <br> проектов</div>
+                            <div class="in-slide2__block__link">
+                                <a href="#">Проекты</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="in-slide2__block">
+                        <div class="in-slide2__block__inner">
+                            <div class="in-slide2__block__title">Производим и проектируем железобетонные изделия</div>
+                            <div class="in-slide2__block__desc">Мы занимаемся производством и продажей ЖБИ
+                                для промышленного и гражданского строительства, бетона, раствора, асфальта, изделий из ПВХ</div>
+                        </div>
+                    </div>
+                    <div class="in-slide2__block">
+                        <div class="in-slide2__block__inner">
+                            <div class="in-slide2__block__title">1 650 000 тн</div>
+                            <div class="in-slide2__block__desc">Железобетонных изделий произвели за 56—летнюю историю завода</div>
+                        </div>
+                    </div>
+                    <div class="in-slide2__block">
+                        <div class="in-slide2__block__inner">
+                            <div class="in-slide2__block__title">ISO 9001</div>
+                            <div class="in-slide2__block__desc">На нашем предприятии проведена сертификация ISO 9001 и успешно функционирует система менеджмента качества в соответствии
+                                с положениями и требованиями международного стандарта.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="in-slide3 slide is--ndark" id="in-sl3">
+            <div class="in-slide3__down">
+                <div class="down-link">
+                    <div class="down-link__inner">
+                        <a data-anchorid="#in-sl4" class="is--black anchor-target">Вниз</a>
+                    </div>
+                </div>
+            </div>
+            <div class="in-slide3__inner">
+                <div class="in-slide3__inner__wrap">
+                    <div class="in-slide3__inner__photo">
+                        <img src="img/sl3photo.jpg" alt="">
+                    </div>
+                    <div class="in-slide3__inner__text">
+                        <div class="in-slide3__inner__title">
+                            Изготовление, поставка и монтаж железобетонных изделий
+                        </div>
+                        <div class="in-slide3__inner__desc">
+                            <p>Получите весь комплекс услуг для промышленного
+                                и гражданского строительства от одного поставщика. Мы—лидеры
+                                в отрасли крупнопанельного домостроения (КПД). Работаем по типовым и индивидуальным заказам. Все серийные изделия или изготовленные по чертежам заказчика производятся в соответствии
+                                с ГОСТами и другой нормативно-технической документацией</p>
+                        </div>
+                        <div class="in-slide3__inner__btn">
+                            <a href="#" class="button is--default is--msmall">записаться на экскурсию</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="in-slide4 slide is--ndark" id="in-sl4">
+            <div class="in-slide4__inner">
+
+            </div>
+            <div class="in-slide4__bg1"></div>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
