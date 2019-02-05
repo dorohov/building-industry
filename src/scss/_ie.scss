@@ -1,9 +1,31 @@
+$bg_color: rgba(#001528, .5);
+
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .in {
         &-slide1 {
             &::before,
             &::after {
-                background: rgba(#001528, .5) !important;
+                background: $bg_color !important;
+            }
+        }
+        &-slide4 {
+            &::after {
+                background: $bg_color !important;
+            }
+        }
+        &-slide5 {
+            &::after {
+                background: $bg_color !important;
+            }
+            &__bg2 {
+                &::before {
+                    background: $bg_color !important;
+                }
+            }
+        }
+        &-slide6 {
+            &::after {
+                background: $bg_color !important;
             }
         }
     }

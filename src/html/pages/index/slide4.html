@@ -1,6 +1,32 @@
 <div class="in-slide4 slide is--ndark" id="in-sl4">
-    <div class="in-slide4__inner">
-
+    <div class="in-slide4__down">
+        @@include('../../items/down-link.html', {
+            "url": "#in-sl5",
+            "type": "black"
+        })
     </div>
-    <div class="in-slide4__bg1"></div>
+    <div class="in-slide4__nums">
+        @@include('../../items/snums.html', {
+            "or": "hor",
+            "l1": "#in-sl2",
+            "l2": "#in-sl4",
+            "l3": "#in-sl5"
+        })
+    </div>
+    <div class="in-slide4__bg1">
+        <div class="in-slide4__inner">
+            <div class="in-slide4__title">Качество от производителя, проверенное временем</div>
+            <div class="in-slide4__text">
+                <p>Строительные организации знают, что закупая и изготавливая железобетонные изделия у нас, они построят здания на века! 1/3 Орловской области застроено благодаря нашему производству железобетонных конструкций.</p>
+                <p>Имея в своей структуре производственно-технический отдел, высокопрофессиональное конструкторское бюро, лабораторию, собственную производственную базу, мы можем изготовить материалы и конструкции для проектов любой степени сложности</p>
+            </div>
+            <div class="in-slide4__btn">
+                @@include('../../items/button.html', {
+                    "url": "#",
+                    "text": "Смотреть видео",
+                    "type": "default is--msmall"
+                })
+            </div>
+        </div>
+    </div>
 </div>
