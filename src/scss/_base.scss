@@ -13,6 +13,10 @@ svg {
     vertical-align: top;
 }
 
+.pg-wrapper {
+    overflow-x: hidden;
+}
+
 @media (max-width: $resp768) {
     body {
         &.is--menu-open {

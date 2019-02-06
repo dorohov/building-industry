@@ -1,3 +1,47 @@
-<div class="form">
-    
+<div class="form slides-end">
+    <div class="form__heading">
+        @@include('../../items/heading.html', {
+            "align": "center",
+            "text": "Получите всю подробную информацию и точный расчет",
+            "subtext": "Оставьте заявку, мы свяжемся с Вами и рассчитаем стоимость в течение 1 часа!"
+        })
+    </div>
+    <div class="form__inner">
+        <form action="#">
+            <div class="form__group is--three">
+                <label for="name" class="is--icon">
+                    @@include('../../items/svg.html', {"name": "fname"})
+                </label>
+                <input type="text" id="name" name="name" placeholder="Имя">
+            </div>
+            <div class="form__group is--three">
+                <label for="phone" class="is--icon">
+                    @@include('../../items/svg.html', {"name": "fphone"})
+                </label>
+                <input type="text" id="phone" name="phone" placeholder="Номер">
+            </div>
+            <div class="form__group is--three">
+                <label for="email" class="is--icon">
+                    @@include('../../items/svg.html', {"name": "femail"})
+                </label>
+                <input type="email" id="email" name="email" placeholder="Почта">
+            </div>
+            <div class="form__group is--one">
+                <label for="comment" class="is--icon">
+                    @@include('../../items/svg.html', {"name": "fcomment"})
+                </label>
+                <input type="text" id="comment" name="comment" placeholder="Комментарий">
+            </div>
+            <div class="form__group is--one">
+                <label for="file" class="is--icon">
+                    @@include('../../items/svg.html', {"name": "ffile"})
+                </label>
+                <label for="file" class="is--field">Прикрепить файл</label>
+                <input type="file" id="file" name="file">
+            </div>
+            <div class="form__group is--submit">
+                <input type="submit" value="Подобрать">
+            </div>
+        </form>
+    </div>
 </div>

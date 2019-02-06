@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
-<body class="presscroll">
+<body>
     <header>
         <div class="navbar">
             <div class="navbar__inner">
@@ -78,7 +78,7 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="slides-container">
         <div class="in-slide1 slide" id="in-sl1">
             <div class="in-slide1__inner">
 
@@ -92,7 +92,10 @@
             <div class="in-slide1__down">
                 <div class="down-link">
                     <div class="down-link__inner">
-                        <a data-anchorid="#in-sl2" class="is--default anchor-target">Вниз</a>
+
+
+                        <a data-anchorid="in-sl2" class="is--default anchor-target">Вниз</a>
+
                     </div>
                 </div>
             </div>
@@ -161,7 +164,10 @@
             <div class="in-slide3__down">
                 <div class="down-link">
                     <div class="down-link__inner">
-                        <a data-anchorid="#in-sl4" class="is--black anchor-target">Вниз</a>
+
+
+                        <a data-anchorid="in-sl4" class="is--black anchor-target">Вниз</a>
+
                     </div>
                 </div>
             </div>
@@ -194,11 +200,14 @@
                 </div>
             </div>
         </div>
-        <div class="in-slide4 slide is--ndark" id="in-sl4">
+        <div class="in-slide4 slide" id="in-sl4">
             <div class="in-slide4__down">
                 <div class="down-link">
                     <div class="down-link__inner">
-                        <a data-anchorid="#in-sl5" class="is--black anchor-target">Вниз</a>
+
+
+                        <a data-anchorid="in-sl5" class="is--black anchor-target">Вниз</a>
+
                     </div>
                 </div>
             </div>
@@ -222,7 +231,7 @@
                 </div>
             </div>
         </div>
-        <div class="in-slide5 slide is--ndark" id="in-sl5">
+        <div class="in-slide5 slide" id="in-sl5">
             <div class="in-slide5__nums">
                 <ul class="snums is--hor">
                     <li><a href="#in-sl2">01</a></li>
@@ -233,7 +242,10 @@
             <div class="in-slide5__down">
                 <div class="down-link">
                     <div class="down-link__inner">
-                        <a data-anchorid="#in-sl6" class="is--white anchor-target">Вниз</a>
+
+
+                        <a data-anchorid="in-sl6" class="is--white anchor-target">Вниз</a>
+
                     </div>
                 </div>
             </div>
@@ -256,11 +268,14 @@
 
             </div>
         </div>
-        <div class="in-slide6 slide is--ndark" id="in-sl6">
+        <div class="in-slide6 slide" id="in-sl6">
             <div class="in-slide6__down">
                 <div class="down-link">
                     <div class="down-link__inner">
-                        <a data-anchorid="#in-sl5" class="is--black anchor-target">Вниз</a>
+
+
+                        <a data-anchorid="in-sl7" class="is--black anchor-target">Вниз</a>
+
                     </div>
                 </div>
             </div>
@@ -285,8 +300,63 @@
             </div>
             <div class="in-slide6__wrap"></div>
         </div>
-        <div class="form">
+        <div class="form slides-end">
+            <div class="form__heading">
+                <div class="heading is--center">
+                    <div class="heading__title">Получите всю подробную информацию и точный расчет</div>
 
+                    <div class="heading__subtitle">Оставьте заявку, мы свяжемся с Вами и рассчитаем стоимость в течение 1 часа!</div>
+
+                </div>
+            </div>
+            <div class="form__inner">
+                <form action="#">
+                    <div class="form__group is--three">
+                        <label for="name" class="is--icon">
+                            <svg class="svg-fname-dims svg is--fname">
+                                <use xlink:href="img/svg/sprites.svg#fname"></use>
+                            </svg>
+                        </label>
+                        <input type="text" id="name" name="name" placeholder="Имя">
+                    </div>
+                    <div class="form__group is--three">
+                        <label for="phone" class="is--icon">
+                            <svg class="svg-fphone-dims svg is--fphone">
+                                <use xlink:href="img/svg/sprites.svg#fphone"></use>
+                            </svg>
+                        </label>
+                        <input type="text" id="phone" name="phone" placeholder="Номер">
+                    </div>
+                    <div class="form__group is--three">
+                        <label for="email" class="is--icon">
+                            <svg class="svg-femail-dims svg is--femail">
+                                <use xlink:href="img/svg/sprites.svg#femail"></use>
+                            </svg>
+                        </label>
+                        <input type="email" id="email" name="email" placeholder="Почта">
+                    </div>
+                    <div class="form__group is--one">
+                        <label for="comment" class="is--icon">
+                            <svg class="svg-fcomment-dims svg is--fcomment">
+                                <use xlink:href="img/svg/sprites.svg#fcomment"></use>
+                            </svg>
+                        </label>
+                        <input type="text" id="comment" name="comment" placeholder="Комментарий">
+                    </div>
+                    <div class="form__group is--one">
+                        <label for="file" class="is--icon">
+                            <svg class="svg-ffile-dims svg is--ffile">
+                                <use xlink:href="img/svg/sprites.svg#ffile"></use>
+                            </svg>
+                        </label>
+                        <label for="file" class="is--field">Прикрепить файл</label>
+                        <input type="file" id="file" name="file">
+                    </div>
+                    <div class="form__group is--submit">
+                        <input type="submit" value="Подобрать">
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

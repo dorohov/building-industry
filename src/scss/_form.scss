@@ -1,0 +1,10 @@
+.form {
+    background: #fff;
+    padding: 100px 0 70px 0;
+    &__heading {
+        margin-bottom: 50px;
+    }
+    &__inner {
+        @extend .container;
+    }
+}

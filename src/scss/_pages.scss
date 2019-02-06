@@ -1,0 +1,22 @@
+.heading {
+    @extend .container;
+    &.is--center {
+        text-align: center;
+    }
+    &__title {
+        line-height: 47px;
+        font-size: 36px;
+        letter-spacing: 0.02em;
+        color: #000;
+        margin-bottom: 25px;
+    }
+    &__subtitle {
+        font-weight: normal;
+        font-family: 'Open Sans';
+        line-height: 23px;
+        font-size: 18px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        color: #484848;
+    }
+}

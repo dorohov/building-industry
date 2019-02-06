@@ -75,10 +75,10 @@
             right: 50px;
             bottom: 80px;
             z-index: 1000;
-            display: flex;
+            display: inline-block;
             @extend .container;
-            left: 0;
             justify-content: flex-end;
+            width: 100px;
         }
     }
     &-slide2 {
@@ -556,6 +556,10 @@
         a {
             color: rgba(#fff, .5);
             text-decoration: none;
+            transition: .25s all ease;
+            &:hover {
+                color: #fff;
+            }
         }
     }
     &.is--ver {
@@ -569,7 +573,7 @@
                 &::after {
                     width: 1px;
                     height: 180px;
-                    top: 45px;
+                    top: 20px;
                     left: 50%;
                     background: #fff;
                     content: '';
@@ -607,6 +611,10 @@
             }
         }
     }
+}
+
+.anchor-target {
+    cursor: pointer;
 }
 
 @media (max-width: 1600px) {
