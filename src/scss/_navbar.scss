@@ -4,6 +4,7 @@ header {
     left: 0;
     top: 0;
     z-index: 1999;
+    transition: .25s all ease;
     &.is--bg {
         background: $primary-color;
         .navbar {
@@ -20,6 +21,21 @@ header {
 
 .navbar {
     &.is--idark {
+        .navbar {
+            &__content {
+                &__block {
+                    a {
+                        color: #000;
+                    }
+                    svg {
+                        fill: #000;
+                    }
+                }
+            }
+        }
+    }
+    &.is--idark-bg {
+        background: #fff;
         .navbar {
             &__content {
                 &__block {
@@ -79,13 +95,12 @@ header {
                 margin-right: 8px;
                 margin-top: 5px;
                 svg {
-                    transition: .25s all ease;
                 }
             }
             &__t {
                 font-size: 18px;
                 letter-spacing: 0.02em;
-                transition: .25s all ease;
+                transition: 0 !important;
                 span {
                     &.is--b {
                         font-size: 24px;
@@ -108,9 +123,12 @@ header {
         flex-wrap: wrap;
         &.is--open {
             max-width: 400px;
+            position: relative;
+            background: #fff;
             .navbar__menu {
                 &__btn {
                     width: 100%;
+                    background: none;
                     &::after {
                         content: none;
                     }
@@ -121,6 +139,10 @@ header {
                     width: 400px;
                     opacity: 1;
                     top: 150px;
+                    &::before {
+                        top: -150px;
+                        background: #EBEDEE;
+                    }
                 }
             }      
         }
@@ -165,6 +187,15 @@ header {
             display: flex;
             align-items: center;
             justify-content: center;
+            &::before {
+                content: '';
+                width: 5px;
+                height: 100vh;
+                top: 0;
+                left: 0;
+                background: transparent;
+                position: absolute;
+            }
             ul {
                 margin: -150px 0 0 0;
                 padding:0;
@@ -220,6 +251,7 @@ header {
     .navbar {
         background: #fff;
         &__inner {
+            padding: 0 15px;
             height: 70px;
             justify-content: space-between;
         }
@@ -248,11 +280,16 @@ header {
                 height: calc(100vh - 70px);
                 ul {
                     margin-top: 0;
+                    padding: 30px 0 0 30px;
                     li {
                         a {
                             padding: 10px 0;
+                            text-align: left;
                         }
                     }
+                }
+                &::before {
+                    content: none;
                 }
             }
         }

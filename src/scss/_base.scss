@@ -1,6 +1,7 @@
 body {
     background: #EBEDEE;
     font-family: 'Oswald';
+    // overflow: hidden;
 }
 
 * {
@@ -15,6 +16,19 @@ svg {
 
 .pg-wrapper {
     overflow-x: hidden;
+}
+
+a {
+    color: $secondary-color;
+    text-decoration: none;
+    transition: .25s all ease;
+    &:hover {
+        color: darken($secondary-color, 10%);
+    }
+}
+
+.__nw {
+    white-space: nowrap !important;
 }
 
 @media (max-width: $resp768) {

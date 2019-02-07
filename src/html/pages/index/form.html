@@ -1,4 +1,4 @@
-<div class="form slides-end">
+<div class="form slides-end" id="form">
     <div class="form__heading">
         @@include('../../items/heading.html', {
             "align": "center",
@@ -7,41 +7,46 @@
         })
     </div>
     <div class="form__inner">
-        <form action="#">
-            <div class="form__group is--three">
-                <label for="name" class="is--icon">
-                    @@include('../../items/svg.html', {"name": "fname"})
-                </label>
-                <input type="text" id="name" name="name" placeholder="Имя">
-            </div>
-            <div class="form__group is--three">
-                <label for="phone" class="is--icon">
-                    @@include('../../items/svg.html', {"name": "fphone"})
-                </label>
-                <input type="text" id="phone" name="phone" placeholder="Номер">
-            </div>
-            <div class="form__group is--three">
-                <label for="email" class="is--icon">
-                    @@include('../../items/svg.html', {"name": "femail"})
-                </label>
-                <input type="email" id="email" name="email" placeholder="Почта">
-            </div>
-            <div class="form__group is--one">
-                <label for="comment" class="is--icon">
-                    @@include('../../items/svg.html', {"name": "fcomment"})
-                </label>
-                <input type="text" id="comment" name="comment" placeholder="Комментарий">
-            </div>
-            <div class="form__group is--one">
-                <label for="file" class="is--icon">
-                    @@include('../../items/svg.html', {"name": "ffile"})
-                </label>
-                <label for="file" class="is--field">Прикрепить файл</label>
-                <input type="file" id="file" name="file">
-            </div>
-            <div class="form__group is--submit">
-                <input type="submit" value="Подобрать">
-            </div>
-        </form>
+        <div class="form__wrap">
+            <form action="#">
+                <div class="form__group is--three">
+                    <input type="text" id="name" name="name" placeholder="Имя">
+                    <label for="name" class="is--icon">
+                        @@include('../../items/svg.html', {"name": "fname"})
+                    </label>
+                </div>
+                <div class="form__group is--three">
+                    <input type="text" id="phone" name="phone" placeholder="Номер">
+                    <label for="phone" class="is--icon">
+                        @@include('../../items/svg.html', {"name": "fphone"})
+                    </label>
+                </div>
+                <div class="form__group is--three">
+                    <input type="email" id="email" name="email" placeholder="Почта">
+                    <label for="email" class="is--icon">
+                        @@include('../../items/svg.html', {"name": "femail"})
+                    </label>
+                </div>
+                <div class="form__group is--one">
+                    <input type="text" id="comment" name="comment" placeholder="Комментарий">
+                    <label for="comment" class="is--icon">
+                        @@include('../../items/svg.html', {"name": "fcomment"})
+                    </label>
+                </div>
+                <div class="form__group is--one">
+                    <label for="file" class="is--field is--file-label">Прикрепить файл</label>
+                    <input type="file" id="file" name="file">
+                    <label for="file" class="is--icon">
+                        @@include('../../items/svg.html', {"name": "ffile"})
+                    </label>
+                </div>
+                <div class="form__group is--submit">
+                    <input type="submit" value="Подобрать" class="button is--msmall">
+                    <div class="form__group__text">
+                        Нажимая на кнопку «Отправить», Вы соглашаетесь с правилами <a href="#">обработки персональных данных</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 </div>

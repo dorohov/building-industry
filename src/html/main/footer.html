@@ -1,4 +1,64 @@
 @@include('scripts.html')
 <footer class="footer">
-
+    <div class="footer__inner">
+        <div class="footer__top">
+            <div class="footer__top__inner">
+                <div class="footer__logo">
+                    <a href="index.html">
+                        @@include('../items/svg.html', {"name": "logo"})
+                    </a>
+                </div>
+                <div class="footer__menus">
+                    <div class="footer__menu">
+                        <div class="footer__menu__title">Продукция</div>
+                        <div class="footer__menu__list">
+                            <ul>
+                                <li><a href="#">Изделия ЖБИ</a></li>
+                                <li><a href="#">Асфальтобетон</a></li>
+                                <li><a href="#">КПД</a></li>
+                                <li><a href="#">ПВХ - изделия</a></li>
+                                <li><a href="#">Растворбетон</a></li>
+                                <li><a href="#">Вибропрессованные изделия</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__menu">
+                        <div class="footer__menu__title">О компании</div>
+                        <div class="footer__menu__list">
+                            <ul>
+                                <li><a href="#">Продукция</a></li>
+                                <li><a href="#">Производство</a></li>
+                                <li><a href="#">Услуги</a></li>
+                                <li><a href="#">Новости</a></li>
+                                <li><a href="#">Проекты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__menu is--oneline">
+                        <div class="footer__menu__title">Контакты</div>
+                        <div class="footer__menu__list">
+                            <ul>
+                                <li><a href="tel:84862782636" class="__nw">+7 (4862) 78-26-36 </a></li>
+                                <li><a href="mailto:sales.osi@orelstroy.ru">sales.osi@orelstroy.ru</a></li>
+                                <li><span class="is--addr">г. Орел, Кромское шоссе, д. 21</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom__inner">
+                <div class="footer__cop">&copy; 2019 Орелстройиндустрия</div>
+                <div class="dorohov">
+                    <a href="http://dorohovdesign.ru/" target="_blank">
+                        <div class="dorohov--text">Дизайн и разработка -</div>
+                        <div class="dorohov--logo">
+                            @@include('../items/svg.html', {"name": "dorohov"})
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>

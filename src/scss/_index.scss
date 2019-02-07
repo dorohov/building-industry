@@ -231,6 +231,10 @@
                 max-width: 895px;
                 width: 100%;
                 margin-right: 80px;
+                overflow: hidden;
+                img {
+                    transform: scale(1.2);
+                }
             }
             &__text {
                 width: 485px;
@@ -808,6 +812,8 @@
 @media (max-width: 768px) {
     .in {
         &-slide1 {
+            min-height: 100vh;
+            align-items: center;
             &__inner {
                 padding-top: 70px;
             }
