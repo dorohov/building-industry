@@ -16,6 +16,9 @@ header {
                 }
             }
         }
+        .navbar__menu__btn::after {
+            content: none;
+        }
     }
 }
 
@@ -235,9 +238,24 @@ header {
 @media (max-width: $resp1400) {
     .navbar {
         &__content {
-            display: none;
+            width: auto;
+            justify-content: flex-start;
+            align-items: center;
+            &__block {
+                height: auto;
+                &.is--cart {
+                    display: none;
+                }
+            }
         }
         &__menu {
+            max-width: 300px;
+            &.is--open {
+                max-width: 300px !important;
+                .navbar__menu__container {
+                    width: 300px;
+                }
+            }
             &__btn {
                 &::after {
                     content: none;

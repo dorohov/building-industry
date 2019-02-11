@@ -14,5 +14,19 @@
             $(items.button).toggleClass('is-active')
         })
 
+        setBgForNavbar()
+
+        $(document).on('scroll', function(e) {
+            setBgForNavbar()
+        })
+
+        function setBgForNavbar() {
+            if(window.pageYOffset >= 150) {
+                $('header').addClass('is--bg')
+            }else {
+                $('header').removeClass('is--bg')
+            }
+        }
+
     })
 })(jQuery);

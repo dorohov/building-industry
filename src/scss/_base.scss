@@ -1,7 +1,10 @@
 body {
-    background: #EBEDEE;
+    background: #fff;
     font-family: 'Oswald';
-    // overflow: hidden;
+    &.__nscroll {
+        overflow: hidden;
+        background: #EBEDEE;
+    }
 }
 
 * {

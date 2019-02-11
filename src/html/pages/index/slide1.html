@@ -1,4 +1,4 @@
-<div class="in-slide1 slide" id="in-sl1">
+<div class="in-slide1 slide is--id@@content_id" id="in-sl1">
     <div class="in-slide1__inner">
         @@if(content_id == 1) {
             <div class="in-slide1__title">Материалы для промышленного и гражданского строительства</div>
@@ -11,6 +11,30 @@
                 })
             </div>
         }
+        @@if(content_id == 2) {
+            <div class="in-slide1__breadcrumbs">
+                @@include('../../items/breadcrumbs.html')
+            </div>
+            <div class="in-slide1__title">Производство железобетонных изделий и конструкций от 1 шт</div>
+            <div class="in-slide1__stat">
+                <div class="in-slide1__stat__block">
+                    <div class="in-slide1__stat__block__num">100%</div>
+                    <div class="in-slide1__stat__block__text">Контроль лаборатории</div>
+                </div>
+                <div class="in-slide1__stat__block">
+                    <div class="in-slide1__stat__block__num">5 000 м3</div>
+                    <div class="in-slide1__stat__block__text">Мощность производства изделий в месяц</div>
+                </div>
+                <div class="in-slide1__stat__block">
+                    <div class="in-slide1__stat__block__num">3500</div>
+                    <div class="in-slide1__stat__block__text">Наименований изделий в наличии в Орле</div>
+                </div>
+                <div class="in-slide1__stat__block">
+                    <div class="in-slide1__stat__block__num">24/7</div>
+                    <div class="in-slide1__stat__block__text">Круглосуточное производство</div>
+                </div>
+            </div>
+        }
     </div>
     <div class="in-slide1__down">
         @@include('../../items/down-link.html', {
@@ -18,12 +42,14 @@
             "type": "default"
         })
     </div>
-    <div class="in-slide1__nums">
-        @@include('../../items/snums.html', {
-            "or": "ver",
-            "l1": "#in-sl2",
-            "l2": "#in-sl4",
-            "l3": "#in-sl5"
-        })
-    </div>
+    @@if(content_id == 1) {
+        <div class="in-slide1__nums">
+            @@include('../../items/snums.html', {
+                "or": "ver",
+                "l1": "#in-sl2",
+                "l2": "#in-sl4",
+                "l3": "#in-sl5"
+            })
+        </div>
+    }
 </div>

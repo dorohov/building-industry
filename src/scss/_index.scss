@@ -1,7 +1,14 @@
 .in {
     &-slide1 {
-        background-image: url(../../img/in-slide1-bg.jpg);
         display: flex;
+        &.is--id {
+            &1 {
+                background-image: url(../../img/in-slide1-bg.jpg);
+            }
+            &2 {
+                background-image: url(../../img/products-slide1-bg.jpg);
+            }
+        }
         &::before {
             background: #1F5087;
             width: 100%;
@@ -79,6 +86,33 @@
             @extend .container;
             justify-content: flex-end;
             width: 100px;
+        }
+        &__breadcrumbs {
+            margin-top: -60px;
+            margin-bottom: 90px;
+        }
+        &__stat {
+            display: flex;
+            flex-wrap: wrap;
+            &__block {
+                max-width: 230px;
+                width: 100%;
+                margin-right: 120px;
+                &__num {
+                    color: $secondary-color;
+                    text-transform: uppercase;
+                    font-size: 36px;
+                    font-weight: bold;
+                    margin-bottom: 20px;
+                }
+                &__text {
+                    line-height: 24px;
+                    color: #fff;
+                    font-size: 18px;
+                    font-weight: normal;
+            font-family: 'Open Sans';
+                }
+            }
         }
     }
     &-slide2 {
@@ -638,6 +672,13 @@
             &__nums {
                 display: none;
             }
+            &__stat {
+                &__block {
+                    margin-right: 15px;
+                    margin-bottom: 30px;
+                    max-width: calc(50% - 30px);
+                }
+            }
         }
         &-slide3 {
             &__inner {
@@ -820,7 +861,8 @@
             &__title {
                 font-size: 18px;
                 line-height: 20px;
-                margin-bottom: 15px;
+                margin-bottom: 30px;
+                padding-right: 0;
             }
             &__desc {
                 font-size: 16px !important;
@@ -829,6 +871,24 @@
             &__down,
             &__nums {
                 display: none;
+            }
+            &__breadcrumbs {
+                margin-top: 0;
+                margin-bottom: 18px;
+            }
+            &__stat {
+                display: block;
+                &__block {
+                    max-width: 100%;    
+                    margin-bottom: 20px;
+                    &__num {
+                        font-size: 26px;
+                        margin-bottom: 0;
+                    }
+                    &__text {
+                        font-size: 14px;
+                    }
+                }
             }
         }
         &-slide3 {

@@ -49,30 +49,39 @@
         $(window).on('scroll', function(e) {
             // console.log(document.getElementById("form").getBoundingClientRect())
             // console.log(window.innerHeight)
-
-            if(document.getElementById("form").getBoundingClientRect().top <= 150) {
-                $('header').addClass('is--bg')
-            }else {
-                $('header').removeClass('is--bg')
+            if($('body').hasClass('__nscroll')) {
+                if(document.getElementById("form").getBoundingClientRect().top <= 150) {
+                    $('header').addClass('is--bg')
+                }else {
+                    $('header').removeClass('is--bg')
+                }
+    
+                if($('#' + ids[current]).hasClass(items.darkClass)) {
+                    $('.navbar').addClass('is--idark')
+                }else {
+                    $('.navbar').removeClass('is--idark')
+                }
+                if(current + 1 == ids.length) {
+                    scroll2 = false
+                    console.log('dasd')
+                }else {
+                    e.preventDefault()
+                }
+    
+                if (
+                    $(document).scrollTop() + $(window).height() > $('#in-sl5').offset().top && 
+                    $(document).scrollTop() - $('#in-sl5').offset().top < $('#in-sl5').height()
+                    ) 
+                {
+                    scroll2 = true
+                }
             }
+
         })
 
-        $(window).on('mousewheel', function(e) {
-            if(current + 1 == ids.length) {
-                scroll2 = false
-            }else {
-                e.preventDefault()
-            }
+        $(window).on('mousewheel', function(e, delta) {
 
-            if (
-                $(document).scrollTop() + $(window).height() > $('#in-sl5').offset().top && 
-                $(document).scrollTop() - $('#in-sl5').offset().top < $('#in-sl5').height()
-                ) 
-            {
-                scroll2 = true
-            }
-
-            if(scroll && scroll2) {
+            if(scroll && scroll2 && $('body').hasClass('__nscroll')) {
                 if(e.deltaY < 0) {
                     if(current + 1 == ids.length ) {
                         
@@ -95,10 +104,10 @@
     
                 scroll = false
             }
-            if($('#' + ids[current]).hasClass(items.darkClass)) {
-                $('.navbar').addClass('is--idark')
-            }else {
-                $('.navbar').removeClass('is--idark')
+
+            if(current + 1 == ids.length && $('body').hasClass('__nscroll')) {
+                var scrollTop = $(this).scrollTop();
+                $(this).scrollTop(scrollTop-Math.round(delta * 100));
             }
 
             // console.log('Текущий слайдер', ids[current])

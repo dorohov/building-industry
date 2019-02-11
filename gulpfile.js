@@ -101,7 +101,11 @@ function imageMinify() {
 function html() {
     return gulp.src(assets.html)
                 .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-                .pipe(fileInclude())
+                .pipe(fileInclude({
+                    context: {
+                        lol: "lol"
+                      }
+                }))
                 .pipe(htmlbeautify())
                 .pipe(gulp.dest('./'))
                 .on('end', browserSync.reload)
