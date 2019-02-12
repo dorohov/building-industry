@@ -1,0 +1,57 @@
+<div class="products__slider">
+    @@include('../../items/heading.html', {
+        "subtext": false,
+        "text": "У нас Вы также можете заказать:",
+        "align": "uppercase"
+    })
+    <div class="products__slider__inner">
+        <div class="products__slider__items">
+            <div class="products__slider__item">
+                @@include('../../items/product_item.html', {
+                    "img": "product_1.png",
+                    "title": "Желозобетонные изделия"
+                })
+            </div>
+            <div class="products__slider__item">
+                @@include('../../items/product_item.html', {
+                    "img": "product_2.png",
+                    "title": "КПД"
+                })
+            </div>
+            <div class="products__slider__item">
+                @@include('../../items/product_item.html', {
+                    "img": "product_4.png",
+                    "title": "Вибропрессованные изделия"
+                })
+            </div>
+            <div class="products__slider__item">
+                @@include('../../items/product_item.html', {
+                    "img": "product_1.png",
+                    "title": "Желозобетонные изделия"
+                })
+            </div>
+            <div class="products__slider__item">
+                @@include('../../items/product_item.html', {
+                    "img": "product_2.png",
+                    "title": "КПД"
+                })
+            </div>
+            <div class="products__slider__item">
+                @@include('../../items/product_item.html', {
+                    "img": "product_4.png",
+                    "title": "Вибропрессованные изделия"
+                })
+            </div>
+        </div>
+        <div class="products__slider__arrow is--left">
+            <button role="button">
+                    @@include('../../items/svg.html', {"name": "slider_arrow"})
+            </button>
+        </div>
+        <div class="products__slider__arrow is--right">
+            <button role="button">
+                    @@include('../../items/svg.html', {"name": "slider_arrow"})
+            </button>
+        </div>
+    </div>
+</div>

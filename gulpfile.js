@@ -20,6 +20,7 @@ var gulp = require('gulp'),
     minify = require('gulp-minify'),
     strip_comments = require('gulp-strip-json-comments'),
     htmlbeautify = require('gulp-html-beautify'),
+    data = require('./src/data.json'),
     sourcemaps = require('gulp-sourcemaps');
 
     var assets = {
@@ -102,9 +103,7 @@ function html() {
     return gulp.src(assets.html)
                 .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
                 .pipe(fileInclude({
-                    context: {
-                        lol: "lol"
-                      }
+                    context: data 
                 }))
                 .pipe(htmlbeautify())
                 .pipe(gulp.dest('./'))

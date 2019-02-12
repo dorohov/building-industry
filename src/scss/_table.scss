@@ -1,0 +1,115 @@
+table {
+    border-collapse: collapse;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: normal;
+    font-family: 'Open Sans';
+    thead {
+        background: $primary-color;
+        tr {
+            th {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 400;
+                padding: 30px 10px;
+                small {
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                padding: 20px 10px;
+                text-align: center;
+                border-bottom: 1px solid rgba(#282828, .25);
+            }
+            &.is--inputs {
+                td {
+                    border: none;
+                    &:first-child {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.table {
+    &-buy_btn {
+        button {
+            height: 100%;
+            border: 1px solid #E7EDF3;
+            background: transparent;
+            height: 45px;
+            padding: 0 15px;
+            outline: none;
+            svg {
+                fill: #0C498C;
+            }
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: $resp1200) {
+    table {
+        display: block;
+        thead {
+            display: none;
+        }
+        tbody {
+            display: block;
+            tr {
+                display: block;
+                width: 100%;
+                border: 1px solid $primary-color;
+                margin-bottom: 20px;
+                td {
+                    width: 100% ;
+                    max-width: 100%;
+                    display: block;
+                    border: none;
+                    position: relative;
+                    padding: 10px;
+                    text-align: left;
+                    &::before {
+                        content: attr(data-fieldname);
+                        width: 40%;
+                        padding-right: 10px;
+                        font-weight: bold;
+                    }
+                    .table-buy_btn,
+                    .input-table.is--count {
+                        padding-top: 10px;
+                    }
+                    .input-table.is--count {
+                        input {
+                            margin: 0;
+                        }
+                    }
+                    &:first-child {
+                        padding: 0 10px 0 10px !important; 
+                    }
+                    select {
+                        width: 100% !important;
+                    }
+                }
+                &::before {
+                    content: attr(data-fieldname);
+                    padding: 10px 15px;
+                    display: block;
+                    background: #0C498C;
+                    color: #fff;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .__th {
+        display: none;
+    }
+}

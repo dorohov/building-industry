@@ -1,17 +1,124 @@
 <div class="products__table">
+    @@include('../../items/heading.html', {
+        "subtext": false,
+        "text": "Таблица плит перекрытий ПК высотой 220 мм",
+        "align": "uppercase"
+    })
     <div class="products__table__inner">
-        @@include('../../items/heading.html', {
-            "subtext": false,
-            "text": "Таблица плит перекрытий ПК высотой 220 мм",
-            "align": "uppercase"
-        })
         <div class="products__table__wrap">
             <div class="products__table__aside">
                 <div class="products__table__aside__inner">
-                    
+                    <ul>
+                        @@for (var i = 0; i < products_menu.length; i++) {
+                            <li data-tabid="tb-`+i+`" role="button"><a>`+products_menu[i]+`</a></li>
+                        }
+                    </ul>
                 </div>
             </div>
-            <div class="products__table__table">@@lol</div>
+            <div class="products__table__table">
+                <div class="products__table__categm">
+                    <select name="categm" id="categm">
+                        @@for (var i = 0; i < products_menu.length; i++) {
+                            <option value="`+i+`">`+products_menu[i]+`</option>
+                        }
+                    </select>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Наименование</th>
+                            <th>Длинна, <small>мм</small></th>
+                            <th>Ширина, <small>мм</small></th>
+                            <th>Высота, <small>мм</small></th>
+                            <th>Нагрузка</th>
+                            <th>Вес, <small>тонн</small></th>
+                            <th>Цена</th>
+                            <th>Кол-во</th>
+                            <th>Купить</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="is--inputs" data-fieldname="Фильтр">
+                            <td>
+                                <div class="input-table is--search">
+                                    <input id="table-search" name="table-search" placeholder="Быстрый поиск"></input>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-table is--default">
+                                    <select name="table-length" id="table-length">
+                                        <option value="1">Все</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-table is--default">
+                                    <select name="table-width" id="table-width">
+                                        <option value="1190">1190 м</option>
+                                        <option value="2190">2190 м</option>
+                                        <option value="3190">3190 м</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-table is--default">
+                                    <select name="table-width" id="table-width">
+                                        <option value="1190">Все</option>
+                                        <option value="2190">2190 м</option>
+                                        <option value="3190">3190 м</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-table is--default">
+                                    <select name="table-load" id="table-load">
+                                        <option value="1190">800 кг\м2</option>
+                                        <option value="2190">2190 м</option>
+                                        <option value="3190">3190 м</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="input-table is--default">
+                                    <select name="table-width" id="table-width">
+                                        <option value="1190">Все</option>
+                                        <option value="2190">2190 м</option>
+                                        <option value="3190">3190 м</option>
+                                    </select>
+                                </div>
+                            </td>
+                            <td class="__th"></td>
+                            <td class="__th"></td>
+                            <td class="__th"></td>
+                        </tr>
+                        @@for (var i = 0; i < products_table.length; i++) {
+                            <tr data-fieldname="`+products_table[i].name+`">
+                                <td class="__th"><b>`+products_table[i].name+`</b></td>
+                                <td data-fieldname="Длинна -">`+products_table[i].length+`</td>
+                                <td data-fieldname="Ширина -">`+products_table[i].width+`</td>
+                                <td data-fieldname="Высота -">`+products_table[i].height+`</td>
+                                <td data-fieldname="Нагрузка">`+products_table[i].load+`</td>
+                                <td data-fieldname="Вес">`+products_table[i].weight+`</td>
+                                <td data-fieldname="Цена">`+products_table[i].price+`</td>
+                                <td data-fieldname="Кол-во">
+                                    <div class="input-table is--count">
+                                        <input type="number" min="1" value="1">
+                                    </div>
+                                </td>
+                                <td data-fieldname="Купить">
+                                    <div class="table-buy_btn">
+                                        <button>
+                                            @@include('../../items/svg.html', {"name": "shopping-cart"})
+                                        </button>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>

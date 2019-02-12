@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#00326a">
+    <meta name="apple-mobile-web-app-title" content="Орелстрой">
+    <meta name="application-name" content="Орелстрой">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <title>Продукция - Стройиндустрия</title>
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
@@ -63,9 +72,9 @@
                         <ul>
                             <li><a href="#">О компании</a></li>
                             <li><a href="#">Прайс-лист</a></li>
-                            <li><a href="products.html">Производство</a></li>
+                            <li><a class="is--active" href="products.html">Производство</a></li>
                             <li><a href="#">Проекты</a></li>
-                            <li><a href="#">Новости</a></li>
+                            <li><a href="news.html">Новости</a></li>
                             <li><a href="#">Контакты</a></li>
                         </ul>
                     </div>
@@ -79,7 +88,7 @@
 
 
                 <div class="in-slide1__breadcrumbs">
-                    <div class="breadcrumbs">
+                    <div class="breadcrumbs is--white">
                         <ul>
                             <li><a href="#">Главная</a></li>
                             <li>Новости</li>
@@ -125,29 +134,614 @@
             </div>
         </div>
         <div class="products__table">
-            <div class="products__table__inner">
-                <div class="heading is--uppercase">
-                    <div class="heading__title">Таблица плит перекрытий ПК высотой 220 мм</div>
+            <div class="heading is--uppercase">
+                <div class="heading__title">Таблица плит перекрытий ПК высотой 220 мм</div>
 
-                </div>
+            </div>
+            <div class="products__table__inner">
                 <div class="products__table__wrap">
                     <div class="products__table__aside">
                         <div class="products__table__aside__inner">
+                            <ul>
 
+                                <li data-tabid="tb-0" role="button"><a>Плиты перекрытия ПК</a></li>
+
+                                <li data-tabid="tb-1" role="button"><a>Плиты перекрытия 7 ПБ</a></li>
+
+                                <li data-tabid="tb-2" role="button"><a>Плиты перекрытия ПБ 1.6</a></li>
+
+                                <li data-tabid="tb-3" role="button"><a>Плиты перекрытия 3</a></li>
+
+                                <li data-tabid="tb-4" role="button"><a>ПБ Плиты перекрытия ПБ 4.0</a></li>
+
+                                <li data-tabid="tb-5" role="button"><a>Плиты перекрытия 7 ПБ</a></li>
+
+                                <li data-tabid="tb-6" role="button"><a>Плиты перекрытия 4НВК</a></li>
+
+                                <li data-tabid="tb-7" role="button"><a>Кольца и колодцы</a></li>
+
+                                <li data-tabid="tb-8" role="button"><a>Трубы железобетонные</a></li>
+
+                                <li data-tabid="tb-9" role="button"><a>Плиты камер и каналов ВП</a></li>
+
+                                <li data-tabid="tb-10" role="button"><a>Элементы коллекторов</a></li>
+
+                                <li data-tabid="tb-11" role="button"><a>Сваи железобетонные</a></li>
+
+                                <li data-tabid="tb-12" role="button"><a>Блоки ФБС</a></li>
+
+                                <li data-tabid="tb-13" role="button"><a>Фундамент ленточный ФЛ</a></li>
+
+                                <li data-tabid="tb-14" role="button"><a>Лотки железобетонные</a></li>
+
+                                <li data-tabid="tb-15" role="button"><a>Перемычки железобетонные</a></li>
+
+                                <li data-tabid="tb-16" role="button"><a>Дорожные плиты</a></li>
+
+                                <li data-tabid="tb-17" role="button"><a>Лестничные марши</a></li>
+
+                                <li data-tabid="tb-18" role="button"><a>Бетонные заборы</a></li>
+
+                            </ul>
                         </div>
                     </div>
-                    <div class="products__table__table">@@lol</div>
+                    <div class="products__table__table">
+                        <div class="products__table__categm">
+                            <select name="categm" id="categm">
+
+                                <option value="0">Плиты перекрытия ПК</option>
+
+                                <option value="1">Плиты перекрытия 7 ПБ</option>
+
+                                <option value="2">Плиты перекрытия ПБ 1.6</option>
+
+                                <option value="3">Плиты перекрытия 3</option>
+
+                                <option value="4">ПБ Плиты перекрытия ПБ 4.0</option>
+
+                                <option value="5">Плиты перекрытия 7 ПБ</option>
+
+                                <option value="6">Плиты перекрытия 4НВК</option>
+
+                                <option value="7">Кольца и колодцы</option>
+
+                                <option value="8">Трубы железобетонные</option>
+
+                                <option value="9">Плиты камер и каналов ВП</option>
+
+                                <option value="10">Элементы коллекторов</option>
+
+                                <option value="11">Сваи железобетонные</option>
+
+                                <option value="12">Блоки ФБС</option>
+
+                                <option value="13">Фундамент ленточный ФЛ</option>
+
+                                <option value="14">Лотки железобетонные</option>
+
+                                <option value="15">Перемычки железобетонные</option>
+
+                                <option value="16">Дорожные плиты</option>
+
+                                <option value="17">Лестничные марши</option>
+
+                                <option value="18">Бетонные заборы</option>
+
+                            </select>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Наименование</th>
+                                    <th>Длинна, <small>мм</small></th>
+                                    <th>Ширина, <small>мм</small></th>
+                                    <th>Высота, <small>мм</small></th>
+                                    <th>Нагрузка</th>
+                                    <th>Вес, <small>тонн</small></th>
+                                    <th>Цена</th>
+                                    <th>Кол-во</th>
+                                    <th>Купить</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="is--inputs" data-fieldname="Фильтр">
+                                    <td>
+                                        <div class="input-table is--search">
+                                            <input id="table-search" name="table-search" placeholder="Быстрый поиск"></input>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-table is--default">
+                                            <select name="table-length" id="table-length">
+                                                <option value="1">Все</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-table is--default">
+                                            <select name="table-width" id="table-width">
+                                                <option value="1190">1190 м</option>
+                                                <option value="2190">2190 м</option>
+                                                <option value="3190">3190 м</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-table is--default">
+                                            <select name="table-width" id="table-width">
+                                                <option value="1190">Все</option>
+                                                <option value="2190">2190 м</option>
+                                                <option value="3190">3190 м</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-table is--default">
+                                            <select name="table-load" id="table-load">
+                                                <option value="1190">800 кг\м2</option>
+                                                <option value="2190">2190 м</option>
+                                                <option value="3190">3190 м</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="input-table is--default">
+                                            <select name="table-width" id="table-width">
+                                                <option value="1190">Все</option>
+                                                <option value="2190">2190 м</option>
+                                                <option value="3190">3190 м</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td class="__th"></td>
+                                    <td class="__th"></td>
+                                    <td class="__th"></td>
+                                </tr>
+
+                                <tr data-fieldname="ПК 16-12-8">
+                                    <td class="__th"><b>ПК 16-12-8</b></td>
+                                    <td data-fieldname="Длинна -">1600</td>
+                                    <td data-fieldname="Ширина -">1190</td>
+                                    <td data-fieldname="Высота -">220</td>
+                                    <td data-fieldname="Нагрузка">800</td>
+                                    <td data-fieldname="Вес">0.625</td>
+                                    <td data-fieldname="Цена">2784</td>
+                                    <td data-fieldname="Кол-во">
+                                        <div class="input-table is--count">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                    </td>
+                                    <td data-fieldname="Купить">
+                                        <div class="table-buy_btn">
+                                            <button>
+                                                <svg class="svg-shopping-cart-dims svg is--shopping-cart">
+                                                    <use xlink:href="img/svg/sprites.svg#shopping-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr data-fieldname="ПК 17-12-8">
+                                    <td class="__th"><b>ПК 17-12-8</b></td>
+                                    <td data-fieldname="Длинна -">1700</td>
+                                    <td data-fieldname="Ширина -">1190</td>
+                                    <td data-fieldname="Высота -">220</td>
+                                    <td data-fieldname="Нагрузка">800</td>
+                                    <td data-fieldname="Вес">0.65</td>
+                                    <td data-fieldname="Цена">3538</td>
+                                    <td data-fieldname="Кол-во">
+                                        <div class="input-table is--count">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                    </td>
+                                    <td data-fieldname="Купить">
+                                        <div class="table-buy_btn">
+                                            <button>
+                                                <svg class="svg-shopping-cart-dims svg is--shopping-cart">
+                                                    <use xlink:href="img/svg/sprites.svg#shopping-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr data-fieldname="ПК 18-12-8">
+                                    <td class="__th"><b>ПК 18-12-8</b></td>
+                                    <td data-fieldname="Длинна -">1800</td>
+                                    <td data-fieldname="Ширина -">1190</td>
+                                    <td data-fieldname="Высота -">220</td>
+                                    <td data-fieldname="Нагрузка">800</td>
+                                    <td data-fieldname="Вес">0.725</td>
+                                    <td data-fieldname="Цена">2945</td>
+                                    <td data-fieldname="Кол-во">
+                                        <div class="input-table is--count">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                    </td>
+                                    <td data-fieldname="Купить">
+                                        <div class="table-buy_btn">
+                                            <button>
+                                                <svg class="svg-shopping-cart-dims svg is--shopping-cart">
+                                                    <use xlink:href="img/svg/sprites.svg#shopping-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr data-fieldname="ПК 18-12-8">
+                                    <td class="__th"><b>ПК 18-12-8</b></td>
+                                    <td data-fieldname="Длинна -">1800</td>
+                                    <td data-fieldname="Ширина -">1190</td>
+                                    <td data-fieldname="Высота -">220</td>
+                                    <td data-fieldname="Нагрузка">800</td>
+                                    <td data-fieldname="Вес">0.725</td>
+                                    <td data-fieldname="Цена">2945</td>
+                                    <td data-fieldname="Кол-во">
+                                        <div class="input-table is--count">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                    </td>
+                                    <td data-fieldname="Купить">
+                                        <div class="table-buy_btn">
+                                            <button>
+                                                <svg class="svg-shopping-cart-dims svg is--shopping-cart">
+                                                    <use xlink:href="img/svg/sprites.svg#shopping-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr data-fieldname="ПК 19-12-8">
+                                    <td class="__th"><b>ПК 19-12-8</b></td>
+                                    <td data-fieldname="Длинна -">1900</td>
+                                    <td data-fieldname="Ширина -">1190</td>
+                                    <td data-fieldname="Высота -">220</td>
+                                    <td data-fieldname="Нагрузка">800</td>
+                                    <td data-fieldname="Вес">0.75</td>
+                                    <td data-fieldname="Цена">2999</td>
+                                    <td data-fieldname="Кол-во">
+                                        <div class="input-table is--count">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                    </td>
+                                    <td data-fieldname="Купить">
+                                        <div class="table-buy_btn">
+                                            <button>
+                                                <svg class="svg-shopping-cart-dims svg is--shopping-cart">
+                                                    <use xlink:href="img/svg/sprites.svg#shopping-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr data-fieldname="ПК 20-12-8">
+                                    <td class="__th"><b>ПК 20-12-8</b></td>
+                                    <td data-fieldname="Длинна -">2000</td>
+                                    <td data-fieldname="Ширина -">1190</td>
+                                    <td data-fieldname="Высота -">220</td>
+                                    <td data-fieldname="Нагрузка">800</td>
+                                    <td data-fieldname="Вес">0.75</td>
+                                    <td data-fieldname="Цена">3081</td>
+                                    <td data-fieldname="Кол-во">
+                                        <div class="input-table is--count">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                    </td>
+                                    <td data-fieldname="Купить">
+                                        <div class="table-buy_btn">
+                                            <button>
+                                                <svg class="svg-shopping-cart-dims svg is--shopping-cart">
+                                                    <use xlink:href="img/svg/sprites.svg#shopping-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr data-fieldname="ПК 21-12-8">
+                                    <td class="__th"><b>ПК 21-12-8</b></td>
+                                    <td data-fieldname="Длинна -">2100</td>
+                                    <td data-fieldname="Ширина -">1190</td>
+                                    <td data-fieldname="Высота -">220</td>
+                                    <td data-fieldname="Нагрузка">800</td>
+                                    <td data-fieldname="Вес">0.8</td>
+                                    <td data-fieldname="Цена">4642</td>
+                                    <td data-fieldname="Кол-во">
+                                        <div class="input-table is--count">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                    </td>
+                                    <td data-fieldname="Купить">
+                                        <div class="table-buy_btn">
+                                            <button>
+                                                <svg class="svg-shopping-cart-dims svg is--shopping-cart">
+                                                    <use xlink:href="img/svg/sprites.svg#shopping-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr data-fieldname="ПК 22-12-8">
+                                    <td class="__th"><b>ПК 22-12-8</b></td>
+                                    <td data-fieldname="Длинна -">2200</td>
+                                    <td data-fieldname="Ширина -">1190</td>
+                                    <td data-fieldname="Высота -">220</td>
+                                    <td data-fieldname="Нагрузка">800</td>
+                                    <td data-fieldname="Вес">0.825</td>
+                                    <td data-fieldname="Цена">4642</td>
+                                    <td data-fieldname="Кол-во">
+                                        <div class="input-table is--count">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                    </td>
+                                    <td data-fieldname="Купить">
+                                        <div class="table-buy_btn">
+                                            <button>
+                                                <svg class="svg-shopping-cart-dims svg is--shopping-cart">
+                                                    <use xlink:href="img/svg/sprites.svg#shopping-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr data-fieldname="ПК 23-12-8">
+                                    <td class="__th"><b>ПК 23-12-8</b></td>
+                                    <td data-fieldname="Длинна -">2300</td>
+                                    <td data-fieldname="Ширина -">1190</td>
+                                    <td data-fieldname="Высота -">220</td>
+                                    <td data-fieldname="Нагрузка">800</td>
+                                    <td data-fieldname="Вес">0.875</td>
+                                    <td data-fieldname="Цена">4857</td>
+                                    <td data-fieldname="Кол-во">
+                                        <div class="input-table is--count">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                    </td>
+                                    <td data-fieldname="Купить">
+                                        <div class="table-buy_btn">
+                                            <button>
+                                                <svg class="svg-shopping-cart-dims svg is--shopping-cart">
+                                                    <use xlink:href="img/svg/sprites.svg#shopping-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr data-fieldname="ПК 24-12-8">
+                                    <td class="__th"><b>ПК 24-12-8</b></td>
+                                    <td data-fieldname="Длинна -">2400</td>
+                                    <td data-fieldname="Ширина -">1190</td>
+                                    <td data-fieldname="Высота -">220</td>
+                                    <td data-fieldname="Нагрузка">800</td>
+                                    <td data-fieldname="Вес">0.9</td>
+                                    <td data-fieldname="Цена">4451</td>
+                                    <td data-fieldname="Кол-во">
+                                        <div class="input-table is--count">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                    </td>
+                                    <td data-fieldname="Купить">
+                                        <div class="table-buy_btn">
+                                            <button>
+                                                <svg class="svg-shopping-cart-dims svg is--shopping-cart">
+                                                    <use xlink:href="img/svg/sprites.svg#shopping-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr data-fieldname="ПК 25-12-8">
+                                    <td class="__th"><b>ПК 25-12-8</b></td>
+                                    <td data-fieldname="Длинна -">2500</td>
+                                    <td data-fieldname="Ширина -">1190</td>
+                                    <td data-fieldname="Высота -">220</td>
+                                    <td data-fieldname="Нагрузка">800</td>
+                                    <td data-fieldname="Вес">0.95</td>
+                                    <td data-fieldname="Цена">5089</td>
+                                    <td data-fieldname="Кол-во">
+                                        <div class="input-table is--count">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                    </td>
+                                    <td data-fieldname="Купить">
+                                        <div class="table-buy_btn">
+                                            <button>
+                                                <svg class="svg-shopping-cart-dims svg is--shopping-cart">
+                                                    <use xlink:href="img/svg/sprites.svg#shopping-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr data-fieldname="ПК 26-12-8">
+                                    <td class="__th"><b>ПК 26-12-8</b></td>
+                                    <td data-fieldname="Длинна -">2600</td>
+                                    <td data-fieldname="Ширина -">1190</td>
+                                    <td data-fieldname="Высота -">220</td>
+                                    <td data-fieldname="Нагрузка">800</td>
+                                    <td data-fieldname="Вес">0.975</td>
+                                    <td data-fieldname="Цена">5289</td>
+                                    <td data-fieldname="Кол-во">
+                                        <div class="input-table is--count">
+                                            <input type="number" min="1" value="1">
+                                        </div>
+                                    </td>
+                                    <td data-fieldname="Купить">
+                                        <div class="table-buy_btn">
+                                            <button>
+                                                <svg class="svg-shopping-cart-dims svg is--shopping-cart">
+                                                    <use xlink:href="img/svg/sprites.svg#shopping-cart"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products__slider">
+            <div class="heading is--uppercase">
+                <div class="heading__title">У нас Вы также можете заказать:</div>
+
+            </div>
+            <div class="products__slider__inner">
+                <div class="products__slider__items">
+                    <div class="products__slider__item">
+                        <div class="product__item">
+                            <a href="products.html">
+                                <div class="product__item__img">
+                                    <img src="img/product_1.png" alt="">
+                                </div>
+                                <div class="product__item__name">Желозобетонные изделия</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products__slider__item">
+                        <div class="product__item">
+                            <a href="products.html">
+                                <div class="product__item__img">
+                                    <img src="img/product_2.png" alt="">
+                                </div>
+                                <div class="product__item__name">КПД</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products__slider__item">
+                        <div class="product__item">
+                            <a href="products.html">
+                                <div class="product__item__img">
+                                    <img src="img/product_4.png" alt="">
+                                </div>
+                                <div class="product__item__name">Вибропрессованные изделия</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products__slider__item">
+                        <div class="product__item">
+                            <a href="products.html">
+                                <div class="product__item__img">
+                                    <img src="img/product_1.png" alt="">
+                                </div>
+                                <div class="product__item__name">Желозобетонные изделия</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products__slider__item">
+                        <div class="product__item">
+                            <a href="products.html">
+                                <div class="product__item__img">
+                                    <img src="img/product_2.png" alt="">
+                                </div>
+                                <div class="product__item__name">КПД</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="products__slider__item">
+                        <div class="product__item">
+                            <a href="products.html">
+                                <div class="product__item__img">
+                                    <img src="img/product_4.png" alt="">
+                                </div>
+                                <div class="product__item__name">Вибропрессованные изделия</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__slider__arrow is--left">
+                    <button role="button">
+                        <svg class="svg-slider_arrow-dims svg is--slider_arrow">
+                            <use xlink:href="img/svg/sprites.svg#slider_arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="products__slider__arrow is--right">
+                    <button role="button">
+                        <svg class="svg-slider_arrow-dims svg is--slider_arrow">
+                            <use xlink:href="img/svg/sprites.svg#slider_arrow"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="form slides-end" id="form">
+            <div class="form__heading">
+                <div class="heading is--center">
+                    <div class="heading__title">Получите всю подробную информацию и точный расчет</div>
+
+                    <div class="heading__subtitle">Оставьте заявку, мы свяжемся с Вами и рассчитаем стоимость в течение 1 часа!</div>
+
+                </div>
+            </div>
+            <div class="form__inner">
+                <div class="form__wrap">
+                    <form action="#">
+                        <div class="form__group is--three">
+                            <input type="text" id="name" name="name" placeholder="Имя">
+                            <label for="name" class="is--icon">
+                                <svg class="svg-fname-dims svg is--fname">
+                                    <use xlink:href="img/svg/sprites.svg#fname"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="form__group is--three">
+                            <input type="text" id="phone" name="phone" placeholder="Номер">
+                            <label for="phone" class="is--icon">
+                                <svg class="svg-fphone-dims svg is--fphone">
+                                    <use xlink:href="img/svg/sprites.svg#fphone"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="form__group is--three">
+                            <input type="email" id="email" name="email" placeholder="Почта">
+                            <label for="email" class="is--icon">
+                                <svg class="svg-femail-dims svg is--femail">
+                                    <use xlink:href="img/svg/sprites.svg#femail"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="form__group is--one">
+                            <input type="text" id="comment" name="comment" placeholder="Комментарий">
+                            <label for="comment" class="is--icon">
+                                <svg class="svg-fcomment-dims svg is--fcomment">
+                                    <use xlink:href="img/svg/sprites.svg#fcomment"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="form__group is--one">
+                            <label for="file" class="is--field is--file-label">Прикрепить файл</label>
+                            <input type="file" id="file" name="file">
+                            <label for="file" class="is--icon">
+                                <svg class="svg-ffile-dims svg is--ffile">
+                                    <use xlink:href="img/svg/sprites.svg#ffile"></use>
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="form__group is--submit">
+                            <input type="submit" value="Подобрать" class="button is--msmall">
+                            <div class="form__group__text">
+                                Нажимая на кнопку «Отправить», Вы соглашаетесь с правилами <a href="#">обработки персональных данных</a>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
     </main>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="dist/js/mousewheel.js"></script>
-    <script src="dist/js/main.js"></script>
-    <script src="dist/js/svg4everybody.min.js"></script>
-    <script>
-        svg4everybody();
-    </script>
     <footer class="footer">
         <div class="footer__inner">
             <div class="footer__top">
@@ -180,7 +774,7 @@
                                     <li><a href="#">Продукция</a></li>
                                     <li><a href="products.html">Производство</a></li>
                                     <li><a href="#">Услуги</a></li>
-                                    <li><a href="#">Новости</a></li>
+                                    <li><a href="news.html">Новости</a></li>
                                     <li><a href="#">Проекты</a></li>
                                 </ul>
                             </div>
@@ -215,6 +809,18 @@
             </div>
         </div>
     </footer>
+    <!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/mousewheel.js"></script>
+    <script src="dist/js/slick.min.js"></script>
+    <script src="dist/js/main.js"></script>
+    <script src="dist/js/svg4everybody.min.js"></script>
+    <script>
+        svg4everybody();
+    </script>
 </body>
 
 </html>
