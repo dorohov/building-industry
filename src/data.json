@@ -134,6 +134,9 @@
     "pages": {
         "index": "index.html",
         "products": "products.html",
-        "news": "news.html"
+        "news": "news.html",
+        "contacts": "contacts.html",
+        "objects": "objects.html",
+        "history": "history.html"
     }
 }

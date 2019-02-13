@@ -1,0 +1,25 @@
+<div class="object">
+    <a href="#">
+        <div class="object__img">
+            <img src="img/@@img" alt="">
+        </div>
+        <div class="object__text">
+            <div class="object__title">
+                <span class="is--text-sm">@@text1</span>
+                <span class="is--text-xl">@@text2</span>
+            </div>
+            <div class="object__stats">
+                <ul>
+                    @@for(var i = 0; i < stats.length; i++) {
+                    <li>
+                        <div class="object__stats__block">
+                            <div class="object__stats__block__num">`+stats[i].num+`</div>
+                            <div class="object__stats__block__text">`+stats[i].title+`</div>
+                        </div>
+                    </li>
+                    }
+                </ul>
+            </div>
+        </div>
+    </a>
+</div>

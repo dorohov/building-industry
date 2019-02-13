@@ -1,0 +1,53 @@
+<div class="wrapper-map">
+    <div class="map">
+        <div id="map"></div>
+        <div class="map__container">
+            <!-- <div class="map__container__bc">
+                @@include('../../items/breadcrumbs.html', {"type": "dark"})
+            </div> -->
+            @@include('../../items/heading.html', {
+                "subtext": false,
+                "text": "Контактная информация",
+                "align": "uppercase"
+            })
+            <div class="map__container__addrs">
+                <ul class="is--map">
+                    <li>г. Орел, Кромское шоссе, д. 21</li>
+                    <li>г. Орел, Раздольная, д. 101</li>
+                    <li>г. Орел, Раздольная, д. 101</li>
+                </ul>
+                <ul class="is--phone">
+                    <li><a href="tel:84862782636">+7 (4862) 78-26-36</a></li>
+                </ul>
+                <ul class="is--mail">
+                    <li><a href="mailto:sales.osi@orelstroy.ru">sales.osi@orelstroy.ru</a></li>
+                </ul>
+            </div>
+            <div class="map__container__form">
+                <form action="#">
+                    <div class="form__group is--transparent is--nic">
+                        <input type="text" id="name" name="name" placeholder="Имя">
+                        <label for="name" class="is--icon">
+                            @@include('../../items/svg.html', {"name": "fname"})
+                        </label>
+                    </div>
+                    <div class="form__group is--transparent is--nic">
+                        <input type="text" id="phone" name="phone" placeholder="Номер">
+                        <label for="phone" class="is--icon">
+                            @@include('../../items/svg.html', {"name": "fphone"})
+                        </label>
+                    </div>
+                    <div class="form__group is--transparent is--nic">
+                        <input type="email" id="email" name="email" placeholder="Почта">
+                        <label for="email" class="is--icon">
+                            @@include('../../items/svg.html', {"name": "femail"})
+                        </label>
+                    </div>
+                    <div class="form__group is--submit">
+                        <input type="submit" value="Подобрать" class="button is--msmall">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

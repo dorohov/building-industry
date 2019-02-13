@@ -1,0 +1,19 @@
+<div class="history">
+    <div class="history__inner">
+        <div class="history__list">
+            <ul>
+                @@for(var i = 0; i < rows.length; i++) {
+                   <li>
+                       <div class="history__row">
+                           <div class="history__num">`+rows[i].id+`</div>
+                           <div class="history__text">`+rows[i].text+`</div>
+                       </div>
+                   </li>
+                }
+            </ul>
+        </div>
+    </div>
+    <div class="history__right">
+        <img src="img/history.jpg" alt="">
+    </div>
+</div>

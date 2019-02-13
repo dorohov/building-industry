@@ -24,7 +24,9 @@
             if(window.pageYOffset >= 150) {
                 $('header').addClass('is--bg')
             }else {
-                $('header').removeClass('is--bg')
+                if(!$('header').hasClass('is--norev')) {
+                    $('header').removeClass('is--bg')
+                }
             }
         }
 

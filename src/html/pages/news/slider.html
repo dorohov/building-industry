@@ -1,11 +1,19 @@
 <div class="news__slider">
     <div class="news__slider__inner">
         <div class="news__slider__left">
-            <div class="news__slider__carousel">
-                <div class="news__slider__carousel__inner">
-                    <div class="news__slider__carousel__item">
-                        <img src="img/news_slider.jpg" alt="">
-                    </div>
+            <div class="news__slider__img">
+                <img src="img/news_slider.jpg" alt="">
+                <div class="news__slider__arrows">
+                    <a href="" class="news__slider__arrow is--left">
+                        <span>
+                            @@include('../../items/svg.html', {"name": "slider_arrow"})
+                        </span>
+                    </a>
+                    <a href="" class="news__slider__arrow is--right">
+                        <span>
+                            @@include('../../items/svg.html', {"name": "slider_arrow"})
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -15,6 +23,11 @@
                     @@include('../../items/svg.html', {"name": "calendar"})
                 </span>
                 <span class="is--text">04 апреля, 2017</span>
+            </div>
+            <div class="news__slider__content">
+                <div class="news__slider__content__title">Открыто предварительное бронирование</div>
+                <p>Продолжается реконструкция двух участков Волоколамского шоссе, сообщил заместитель мэра Москвы по вопросам градостроительной политики 
+                    и строительства Марат Хуснуллин. «Реконструкция Волоколамки – крупный проект развития дорожно-транспортной инфраструктуры на северо-западе столицы.</p>
             </div>
         </div>
     </div>
