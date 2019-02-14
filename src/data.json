@@ -134,6 +134,13 @@
     "pages": {
         "index": "index.html",
         "products": "products.html",
+        "production": "production.html",
+        "about": "about.html",
+        "catalog": "catalog.html",
+        "error404": "404.html",
+        "basket": "basket.html",
+        "basket_empty": "basket-empty.html",
+        "docs": "docs.html",
         "news": "news.html",
         "contacts": "contacts.html",
         "objects": "objects.html",

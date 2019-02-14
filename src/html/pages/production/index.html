@@ -1,0 +1,39 @@
+@@include('../index/slide1.html', {
+    "nums": true,
+    "breadcrumbs": false,
+    "btn_text": "Оставить заявку",
+    "btn_url": "#",
+    "content_id": 4
+})
+<div class="production__items">
+    @@include('item.html', {
+        "align": "rtl",
+        "br_color": "white",
+        "text_color": "dark",
+        "content_id": 1    
+    })
+    @@include('item.html', {
+        "align": "ltr",
+        "br_color": "blue",
+        "text_color": "white",
+        "content_id": 2
+    })
+    @@include('item.html', {
+        "align": "rtl",
+        "br_color": "dark",
+        "text_color": "white",
+        "content_id": 3   
+    })
+    @@include('item.html', {
+        "align": "ltr",
+        "br_color": "white",
+        "text_color": "blue",
+        "content_id": 4  
+    })
+    @@include('item.html', {
+        "align": "rtl",
+        "br_color": "dark",
+        "text_color": "white",
+        "content_id": 5   
+    })
+</div>

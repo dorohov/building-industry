@@ -36,9 +36,19 @@
             </div>
         }
         @@if(content_id == 3) {
+            <div class="in-slide1__breadcrumbs">
+                @@include('../../items/breadcrumbs.html', {"type": "white"})
+            </div>
             <div class="in-slide1__title">Объекты, построенные из наших изделий</div>
             <div class="in-slide1__desc is--id@@content_id">История компании насчитывает не один десяток лет. Нас по праву можно назвать одной из старейших строительных организаций Орла и Орловской области.  За все годы, проведенные
                     на рынке, мы ни разу не дали повод усомниться в нас и нашей продукции. Это наглядно демонстрируют все те объекты, в строительстве которых были применены наши материалы.</div>
+        }
+        @@if(content_id == 4) {
+            <div class="in-slide1__breadcrumbs">
+                @@include('../../items/breadcrumbs.html', {"type": "white"})
+            </div>
+            <div class="in-slide1__title">Наше производство</div>
+            <div class="in-slide1__desc is--id@@content_id">На наших заводах полный цикл производства — изделия, их узлы и детали проектируются, изготавливаются и проверяются  в пределах нашего предприятия.</div>
         }
     </div>
     <div class="in-slide1__down">
