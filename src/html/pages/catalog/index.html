@@ -1,0 +1,52 @@
+<div class="wrapper">
+    <div class="wrapper__inner">
+        @@include('../../items/breadcrumbs.html', {"type": "default"})
+        @@include('../../items/heading.html', {
+            "subtext": false,
+            "text": "Продукция",
+            "align": "uppercase"
+        })
+        <div class="catalog">
+            <div class="catalog__inner">
+                @@include('../../items/product_item.html', {
+                    "img": "product_1.png",
+                    "title": "Желозобетонные изделия"
+                })
+                @@include('../../items/product_item.html', {
+                    "img": "product_2.png",
+                    "title": "КПД"
+                })
+                @@include('../../items/product_item.html', {
+                    "img": "product_3.png",
+                    "title": "Асфальтобетон"
+                })
+                @@include('../../items/product_item.html', {
+                    "img": "product_4.png",
+                    "title": "Вибропрессованные изделия"
+                })
+                @@include('../../items/product_item.html', {
+                    "img": "product_5.png",
+                    "title": "Бетон и строительный раствор"
+                })
+                @@include('../../items/product_item.html', {
+                    "img": "product_6.png",
+                    "title": "Изделия из ПВХ"
+                })
+            </div>
+        </div>
+    </div>
+</div>
+<div class="catalog__delivery">
+    <div class="catalog__delivery__title">
+        <div class="catalog__delivery__title__inner">
+            Доставка и оплата 
+            <span class="is--plus">@@include('../../items/svg.html', {"name": "b_plus"})</span>
+            <span class="is--minus">@@include('../../items/svg.html', {"name": "b_minus"})</span>
+        </div>
+    </div>
+    <div class="catalog__delivery__content">
+        <div class="catalog__delivery__content__inner">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quas laboriosam vitae nulla, nisi earum impedit alias. Deserunt aliquam odit quaerat officia temporibus nam necessitatibus saepe libero asperiores maxime laudantium perferendis suscipit repudiandae dignissimos illo voluptas alias, inventore molestias quibusdam voluptatibus adipisci! Doloremque nam explicabo vel praesentium pariatur, distinctio atque aspernatur! Harum accusantium, tenetur odio ipsum perspiciatis dolores assumenda consectetur ipsa illum nam mollitia? Veritatis, repellendus consequuntur non inventore reiciendis excepturi blanditiis quasi dolorum quod consequatur, voluptates molestiae laborum? Rerum, esse officia aperiam sapiente nemo iure architecto ex assumenda voluptate eius, veniam autem cumque illum, consectetur quaerat consequatur corporis enim.</p>
+        </div>
+    </div>
+</div>

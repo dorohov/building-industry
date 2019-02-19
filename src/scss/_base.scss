@@ -2,8 +2,11 @@ body {
     background: #fff;
     font-family: 'Oswald';
     &.__nscroll {
-        overflow: hidden;
+        // overflow: hidden;
         background: #EBEDEE;
+    }
+    &.mobile_menu_open {
+        overflow: hidden;
     }
 }
 
@@ -34,10 +37,30 @@ a {
     white-space: nowrap !important;
 }
 
+.scrollable {
+    min-height: 100vh;
+}
+
+.iScrollIndicator {
+    background: rgba(12, 73, 140, 0.78) !important;
+}
+
+.__tab-trigger {
+    cursor: pointer;
+}
+
+.__tab-container {
+    display: none;
+}
+
 @media (max-width: $resp768) {
     body {
+        // padding-top: 80px !important;
         &.is--menu-open {
             overflow: hidden;
         }
+    }
+    .slide {
+        align-items: center;
     }
 }

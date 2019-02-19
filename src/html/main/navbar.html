@@ -1,44 +1,85 @@
 <div class="navbar">
     <div class="navbar__inner">
         <div class="navbar__logo">
-            <a href="index.html" class="navbar__logo__link">
+            <a href="@@pages.index">
                 @@include('../items/svg.html', {"name": "logo"})
             </a>
         </div>
         <div class="navbar__content">
-            <div class="navbar__content__block">
-                <a href="mailto:sales.osi@orelstroy.ru">
-                    <div class="navbar__content__block__i">
+            <div class="navbar__link is--firstl">
+                <a href="@@email_link">
+                    <div class="navbar__link--icon">
                         @@include('../items/svg.html', {"name": "mail"})
                     </div>
-                    <div class="navbar__content__block__t">sales.osi@orelstroy.ru</div>
-                </a>
-            </div>
-            <div class="navbar__content__block">
-                <a href="tel:84862782636">
-                    <div class="navbar__content__block__i">
-                        @@include('../items/svg.html', {"name": "phone"})
-                    </div>
-                    <div class="navbar__content__block__t">+7 (4862) <span class="is--b">78-26-36</span></div>
-                </a>
-            </div>
-            <div class="navbar__content__block is--cart">
-                <a href="#">
-                    <div class="navbar__content__block__i">
-                        @@include('../items/svg.html', {"name": "cart"})
+                    <div class="navbar__link--text">
+                       sales.osi@orelstroy.ru
                     </div>
                 </a>
+            </div>
+            <div class="navbar__content__inner">
+                    <div class="navbar__mobile__overlay"></div>
+                <div class="navbar__info">
+                    <div class="navbar__link">
+                        <a href="@@phone_link">
+                            <div class="navbar__link--icon">
+                                @@include('../items/svg.html', {"name": "phone"})
+                            </div>
+                            <div class="navbar__link--text">
+                                +7 (4862) <span class="is--b">78-26-36</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="navbar__link">
+                        <a href="#">
+                            <div class="navbar__link--icon">
+                                @@include('../items/svg.html', {"name": "cart"})
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="navbar__btnmenu">
+                    <div class="navbar__btnmenu__bg"></div>
+                    <div class="navbar__btnmenu__bg__blue"></div>
+                    <div class="navbar__btnmenu__inner">
+                        <button class="hamburger hamburger--spin" type="button" id="open-menu">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                        <div class="navbar__menu">
+                            <ul>
+                                <li><a href="@@pages.about">О компании</a></li>
+                                <li><a href="@@pages.catalog">Прайс-лист</a></li>
+                                <li><a class="is--active" href="@@pages.production">Производство</a></li>
+                                <li><a href="@@pages.objects">Проекты</a></li>
+                                <li><a href="@@pages.news">Новости</a></li>
+                                <li><a href="@@pages.contacts">Контакты</a></li>
+                                <li><a href="@@pages.basket">Корзина</a></li>
+                            </ul>
+                        </div>  
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="navbar__menu">
-            <div class="navbar__menu__btn">
-                <button class="hamburger hamburger--minus" type="button">
-                    <span class="hamburger-box">
-                      <span class="hamburger-inner"></span>
-                    </span>
-                  </button>
-            </div>
-            <div class="navbar__menu__container">
+    </div>
+</div>
+<div class="navbar__mobile">
+    <div class="navbar__mobile__top">
+        <div class="navbar__mobile__logo">
+            <a href="@@pages.index">
+                    @@include('../items/svg.html', {"name": "logo"})
+            </a>
+        </div>
+        <div class="navbar__mobile__btn">
+            <button class="hamburger hamburger--spin" type="button" id="open-mobile-menu">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+    </div>
+    <div class="navbar__mobile__container">
+            <div class="navbar__mobile__menu">
                 <ul>
                     <li><a href="@@pages.about">О компании</a></li>
                     <li><a href="@@pages.catalog">Прайс-лист</a></li>
@@ -46,8 +87,8 @@
                     <li><a href="@@pages.objects">Проекты</a></li>
                     <li><a href="@@pages.news">Новости</a></li>
                     <li><a href="@@pages.contacts">Контакты</a></li>
+                    <li><a href="@@pages.basket">Корзина</a></li>
                 </ul>
             </div>
-        </div>
     </div>
 </div>

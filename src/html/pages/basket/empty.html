@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <div class="wrapper__inner">
+        @@include('../../items/breadcrumbs.html', {"type": "default"})
+        @@include('../../items/heading.html', {
+            "subtext": true,
+            "text": "Корзина",
+            "align": "uppercase is--subsm",
+            "subtext": "В вашей корзине пока нет товаров."
+        })
+        <div class="basket is--empty">
+            <div class="basket__btn">
+                @@include('../../items/button.html', {
+                    "url": "@@pages.catalog",
+                    "text": "За покупками",
+                    "type": "default is--msmall"
+                })
+            </div>
+            <div class="basket__img">
+                <img src="img/about_img.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
