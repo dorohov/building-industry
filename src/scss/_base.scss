@@ -53,6 +53,23 @@ a {
     display: none;
 }
 
+.is--animatecss {
+    .in-slide2__block,
+    .__sl3anim,
+    .__sl3anim2,
+    .__sl4anim,
+    .__sl5anim,
+    .__sl6anim {
+        opacity: 0;
+        transition: 1s all ease;
+    }
+}
+
+img {
+    visibility: hidden;
+}
+
+
 @media (max-width: $resp768) {
     body {
         // padding-top: 80px !important;

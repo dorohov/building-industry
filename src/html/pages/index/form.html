@@ -8,27 +8,27 @@
     </div>
     <div class="form__inner">
         <div class="form__wrap">
-            <form action="#">
+            <form action="#" data-parsley-validate="">
                 <div class="form__group is--three">
-                    <input type="text" id="name" name="name" placeholder="Имя">
+                    <input type="text" id="name" name="name" placeholder="Имя" required data-parsley-no-focus>
                     <label for="name" class="is--icon">
                         @@include('../../items/svg.html', {"name": "fname"})
                     </label>
                 </div>
                 <div class="form__group is--three">
-                    <input type="text" id="phone" name="phone" placeholder="Номер">
+                    <input type="text" id="phone" name="phone" placeholder="Номер" required data-parsley-no-focus>
                     <label for="phone" class="is--icon">
                         @@include('../../items/svg.html', {"name": "fphone"})
                     </label>
                 </div>
                 <div class="form__group is--three">
-                    <input type="email" id="email" name="email" placeholder="Почта">
+                    <input type="email" id="email" name="email" placeholder="Почта" required data-parsley-no-focus>
                     <label for="email" class="is--icon">
                         @@include('../../items/svg.html', {"name": "femail"})
                     </label>
                 </div>
                 <div class="form__group is--one">
-                    <input type="text" id="comment" name="comment" placeholder="Комментарий">
+                    <input type="text" id="comment" name="comment" placeholder="Комментарий" required data-parsley-no-focus>
                     <label for="comment" class="is--icon">
                         @@include('../../items/svg.html', {"name": "fcomment"})
                     </label>

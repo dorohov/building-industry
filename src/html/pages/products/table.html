@@ -23,7 +23,7 @@
                         }
                     </select>
                 </div>
-                <table>
+                <table class="is--default">
                     <thead>
                         <tr>
                             <th>Наименование</th>
@@ -104,7 +104,9 @@
                                 <td data-fieldname="Цена">`+products_table[i].price+`</td>
                                 <td data-fieldname="Кол-во">
                                     <div class="input-table is--count">
-                                        <input type="number" min="1" value="1">
+                                        <button class="input-table-countbtn" data-action="-">-</button>
+                                        <input type="number" min="1" value="1" readonly>
+                                        <button class="input-table-countbtn" data-action="+">+</button>
                                     </div>
                                 </td>
                                 <td data-fieldname="Купить">

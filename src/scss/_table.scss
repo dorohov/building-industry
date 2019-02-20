@@ -4,6 +4,77 @@ table {
     width: 100%;
     font-weight: normal;
     font-family: 'Open Sans';
+    &.is--basket {
+        thead {
+            background: #F3F6F9;
+            tr {
+                th {
+                    padding: 15px 40px;
+                    text-align: left;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: #282828;
+                    &.is--center {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    padding: 10px 40px;
+                    svg {
+                        vertical-align: middle;
+                    }
+                    &.is--center {
+                        text-align: center;
+                    }
+                }
+                &.is--bottom {
+                    b {
+                        display: block;
+                        font-size: 18px;
+                    }
+                    small {
+                        line-height: 41px;
+                        font-size: 18px;
+                    }
+                    td {
+                        border-top: 1px solid #CEDBE8;
+                        border-bottom: 1px solid #CEDBE8;
+                        padding-top: 40px;
+                        padding-bottom: 40px;
+                    }
+                    .is--center {
+                        position: relative;
+                        input[type="text"] {
+                            position: absolute;
+                            right: 100%;
+                            box-sizing: border-box;
+                            width: 100%;
+                            border: 1px solid transparent;
+                            border-bottom-color:#000;
+                            outline: none;
+                            font-weight: normal;
+                            font-family: 'Open Sans';
+                            line-height: 11px;
+                            font-size: 12px;
+                            color: rgba(#313131, .5);
+                            padding: 15px 0px;
+                            transition: .25s all ease;
+                            top: 50%;
+                            margin-top: -30px;
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+table.is--default {
     thead {
         background: $primary-color;
         tr {
@@ -55,8 +126,20 @@ table {
     }
 }
 
-@media (max-width: $resp1200) {
+@media (max-width: 1400px) {
     table {
+        &.is--basket {
+            td,
+            th {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1200) {
+    table.is--default {
         display: block;
         thead {
             display: none;
@@ -111,5 +194,79 @@ table {
     }
     .__th {
         display: none;
+    }
+}
+
+@media (max-width: $resp1025) {
+    .__h25 {
+        display: none !important;
+    }
+    .basket {
+        &__title {
+            margin-bottom: 20px;
+            padding: 15px 25px !important;
+        }
+    }
+    table {
+        &.is--basket {
+            thead {
+                display: none;
+            }
+            tr,
+            td {
+                display: block;
+            }
+            tbody {
+                tr {
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    border-bottom: 1px solid #CEDBE8;
+                    &.is--bottom {
+                        border-bottom: 0;
+                        td {
+                            border: none;
+                            padding: 15px 0;
+                            &:first-child {
+                                margin-bottom: 30px;
+                                padding-top: 30px;
+                            }
+                            &.is--center {
+                                text-align: right;
+                                input {
+                                    position: static !important;
+                                    display: block !important;
+                                }
+                                a {
+                                    position: absolute;
+                                    right: 10px;
+                                    top: 0;
+                                }
+                            }
+                        }
+                        small {
+                            font-size: 14px;
+                        }
+                    }
+                    td {
+                        margin-bottom: 15px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        &.is--center {
+                            text-align: left;
+                        }
+                        &::before {
+                            content: attr(data-fieldname);
+                            display: block;
+                            margin-bottom: 15px;
+                            font-size: 14px;
+                        }
+                        .input-table.is--count {
+                            justify-content: flex-start;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

@@ -24,21 +24,24 @@
                 </ul>
             </div>
             <div class="map__container__form">
-                <form action="#">
+                <div class="map__container__form__title">Получите всю подробную информацию</div>
+                <div class="map__container__form__subtitle">Оставьте заявку, мы свяжемся с Вами
+                        и рассчитаем стоимость в течение 1 часа!</div>
+                <form action="#" data-parsley-validate="">
                     <div class="form__group is--transparent is--nic">
-                        <input type="text" id="name" name="name" placeholder="Имя">
+                        <input type="text" id="name" name="name" placeholder="Имя" required data-parsley-no-focus>
                         <label for="name" class="is--icon">
                             @@include('../../items/svg.html', {"name": "fname"})
                         </label>
                     </div>
                     <div class="form__group is--transparent is--nic">
-                        <input type="text" id="phone" name="phone" placeholder="Номер">
+                        <input type="text" id="phone" name="phone" placeholder="Номер" required data-parsley-no-focus>
                         <label for="phone" class="is--icon">
                             @@include('../../items/svg.html', {"name": "fphone"})
                         </label>
                     </div>
                     <div class="form__group is--transparent is--nic">
-                        <input type="email" id="email" name="email" placeholder="Почта">
+                        <input type="email" id="email" name="email" placeholder="Почта" required data-parsley-no-focus>
                         <label for="email" class="is--icon">
                             @@include('../../items/svg.html', {"name": "femail"})
                         </label>

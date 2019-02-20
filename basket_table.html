@@ -15,8 +15,11 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <title>Корзина - Стройиндустрия</title>
+    <!-- <script src="dist/js/pace.min.js"></script> -->
     <link rel="stylesheet" href="dist/css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="dist/css/aos.css">
+    <link rel="stylesheet" href="dist/css/animate.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
@@ -60,7 +63,7 @@
                                 </a>
                             </div>
                             <div class="navbar__link">
-                                <a href="#">
+                                <a href="basket.html">
                                     <div class="navbar__link--icon">
                                         <svg class="svg-cart-dims svg is--cart">
                                             <use xlink:href="img/svg/sprites.svg#cart"></use>
@@ -144,7 +147,118 @@
                     <div class="basket__title">
                         Товары <span>2</span>
                     </div>
-                    <table></table>
+                    <table class="is--basket">
+                        <thead>
+                            <tr>
+                                <th>Название товара</th>
+                                <th class="is--center">Количество</th>
+                                <th>Единица</th>
+                                <th>Цена с НДС</th>
+                                <th>Сумма</th>
+                                <th>База</th>
+                                <th class="is--center">Удалить</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-fieldname="Название"><b>Арматура 6 А3 А500С 60</b></td>
+                                <td data-fieldname="Количество">
+                                    <div class="input-table is--count">
+                                        <button class="input-table-countbtn" data-action="-">-</button>
+                                        <input type="number" min="1" value="3" readonly>
+                                        <button class="input-table-countbtn" data-action="+">+</button>
+                                    </div>
+                                </td>
+                                <td data-fieldname="Единица">
+                                    <div class="input-table is--transparent">
+                                        <select name="table-width" id="table-width">
+                                            <option value="1190">Тн</option>
+                                            <option value="2190">Ттн</option>
+                                            <option value="3190">Нтт</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td data-fieldname="Цена С НДС">
+                                    <b>
+                                        37 590
+                                        <svg class="svg-ruble-dims svg is--ruble">
+                                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                        </svg>
+                                    </b>
+                                </td>
+                                <td data-fieldname="Сумма">
+                                    <b>
+                                        112 770
+                                        <svg class="svg-ruble-dims svg is--ruble">
+                                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                        </svg>
+                                    </b>
+                                </td>
+                                <td data-fieldname="База">Кромское шоссе</td>
+                                <td data-fieldname="Удалить" class="is--center"><a href="javascript:void(0)"><svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg></a></td>
+                            </tr>
+                            <tr>
+                                <td data-fieldname="Название"><b>ПК 16-12-8</b></td>
+                                <td data-fieldname="Количество">
+                                    <div class="input-table is--count">
+                                        <button class="input-table-countbtn" data-action="-">-</button>
+                                        <input type="number" min="1" value="1" readonly>
+                                        <button class="input-table-countbtn" data-action="+">+</button>
+                                    </div>
+                                </td>
+                                <td data-fieldname="Единица">
+                                    <div class="input-table is--transparent">
+                                        <select name="table-width" id="table-width">
+                                            <option value="1190">Тн</option>
+                                            <option value="2190">Ттн</option>
+                                            <option value="3190">Нтт</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td data-fieldname="Цена с НДС">
+                                    <b>
+                                        25 690
+                                        <svg class="svg-ruble-dims svg is--ruble">
+                                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                        </svg>
+                                    </b>
+                                </td>
+                                <td data-fieldname="Сумма">
+                                    <b>
+                                        158 679
+                                        <svg class="svg-ruble-dims svg is--ruble">
+                                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                        </svg>
+                                    </b>
+                                </td>
+                                <td data-fieldname="База">Кромское шоссе</td>
+                                <td data-fieldname="Удалить" class="is--center"><a href="javascript:void(0)"><svg class="svg-basket-dims svg is--basket">
+                                            <use xlink:href="img/svg/sprites.svg#basket"></use>
+                                        </svg></a></td>
+                            </tr>
+                            <tr class="is--bottom">
+                                <td>
+                                    <b>ИТОГО: 271 449 <svg class="svg-ruble-dims svg is--ruble">
+                                            <use xlink:href="img/svg/sprites.svg#ruble"></use>
+                                        </svg></b>
+                                    <small>В том числе НДС: 33 965</small>
+                                </td>
+                                <td class="__h25"></td>
+                                <td class="__h25"></td>
+                                <td class="__h25"></td>
+                                <td class="__h25"></td>
+                                <td class="__h25"></td>
+                                <td class="is--center">
+                                    <input type="text" class="__tab-container" data-tabid="bask_edit" placeholder="Примечание">
+                                    <a class="__tab-trigger" data-tabid="bask_edit"><svg class="svg-edit-dims svg is--edit">
+                                            <use xlink:href="img/svg/sprites.svg#edit"></use>
+                                        </svg></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -222,7 +336,6 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="dist/js/mousewheel.js"></script>
     <script src="dist/js/slick.min.js"></script>
     <script src="dist/js/jquery.fullpage.min.js"></script>
     <script src="dist/js/scrolloverflow.min.js"></script>
@@ -231,8 +344,11 @@
     <script src="dist/js/TweenMax.min.js"></script>
     <script src="dist/js/TimelineMax.min.js"></script>
     <script src="dist/js/jquery.fancybox.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
+    <script src="dist/js/imask.js"></script>
+    <script src="dist/js/parsley.min.js"></script>
+    <script src="dist/js/i18n/ru.js"></script>
     <script src="dist/js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
     <script src="dist/js/svg4everybody.min.js"></script>
     <script>
         svg4everybody();

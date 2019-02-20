@@ -10,7 +10,102 @@
             <div class="basket__title">
                 Товары <span>2</span>
             </div>
-            <table></table>
+            <table class="is--basket">
+                <thead>
+                    <tr>
+                        <th>Название товара</th>
+                        <th class="is--center">Количество</th>
+                        <th>Единица</th>
+                        <th>Цена с НДС</th>
+                        <th>Сумма</th>
+                        <th>База</th>
+                        <th class="is--center">Удалить</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-fieldname="Название"><b>Арматура 6 А3 А500С 60</b></td>
+                        <td data-fieldname="Количество">
+                            <div class="input-table is--count">
+                                <button class="input-table-countbtn" data-action="-">-</button>
+                                <input type="number" min="1" value="3" readonly>
+                                <button class="input-table-countbtn" data-action="+">+</button>
+                            </div>
+                        </td>
+                        <td data-fieldname="Единица">
+                            <div class="input-table is--transparent">
+                                <select name="table-width" id="table-width">
+                                    <option value="1190">Тн</option>
+                                    <option value="2190">Ттн</option>
+                                    <option value="3190">Нтт</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td data-fieldname="Цена С НДС">
+                            <b>
+                                37 590
+                                @@include('../../items/svg.html', {"name": "ruble"})
+                            </b>
+                        </td>
+                        <td data-fieldname="Сумма">
+                            <b>
+                                112 770
+                                @@include('../../items/svg.html', {"name": "ruble"})
+                            </b>
+                        </td>
+                        <td data-fieldname="База">Кромское шоссе</td>
+                        <td data-fieldname="Удалить" class="is--center"><a href="javascript:void(0)">@@include('../../items/svg.html', {"name": "basket"})</a></td>
+                    </tr>
+                    <tr>
+                        <td data-fieldname="Название"><b>ПК 16-12-8</b></td>
+                        <td data-fieldname="Количество">
+                            <div class="input-table is--count">
+                                <button class="input-table-countbtn" data-action="-">-</button>
+                                <input type="number" min="1" value="1" readonly>
+                                <button class="input-table-countbtn" data-action="+">+</button>
+                            </div>
+                        </td>
+                        <td data-fieldname="Единица">
+                            <div class="input-table is--transparent">
+                                <select name="table-width" id="table-width">
+                                    <option value="1190">Тн</option>
+                                    <option value="2190">Ттн</option>
+                                    <option value="3190">Нтт</option>
+                                </select>
+                            </div>
+                        </td>
+                        <td data-fieldname="Цена с НДС">
+                            <b>
+                                25 690
+                                @@include('../../items/svg.html', {"name": "ruble"})
+                            </b>
+                        </td>
+                        <td data-fieldname="Сумма">
+                            <b>
+                                158 679
+                                @@include('../../items/svg.html', {"name": "ruble"})
+                            </b>
+                        </td>
+                        <td data-fieldname="База">Кромское шоссе</td>
+                        <td data-fieldname="Удалить" class="is--center"><a href="javascript:void(0)">@@include('../../items/svg.html', {"name": "basket"})</a></td>
+                    </tr>
+                    <tr class="is--bottom">
+                        <td>
+                            <b>ИТОГО: 271 449 @@include('../../items/svg.html', {"name": "ruble"})</b>
+                            <small>В том числе НДС: 33 965</small>
+                        </td>
+                        <td class="__h25"></td>
+                        <td class="__h25"></td>
+                        <td class="__h25"></td>
+                        <td class="__h25"></td>
+                        <td class="__h25"></td>
+                        <td class="is--center">
+                            <input type="text" class="__tab-container" data-tabid="bask_edit" placeholder="Примечание">
+                            <a class="__tab-trigger" data-tabid="bask_edit">@@include('../../items/svg.html', {"name": "edit"})</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

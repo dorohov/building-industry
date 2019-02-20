@@ -10,7 +10,8 @@
         },
         is_open = false,
         animate = true,
-        menu = document.querySelectorAll('.navbar__menu ul li a')
+        menu = document.querySelectorAll('.navbar__menu ul li a'),
+        ismobile = false
 
         var fullpage_api = $('.slides-container').fullpage({
             css3: true,
@@ -38,6 +39,49 @@
             slideSelector: '.slide1312',
             onLeave: function(origin, destination, direction){
                 fixedMenuControllerForSlider(destination)
+                if(!ismobile) {
+                    if(destination == 2) {
+                        $('.in-slide2__block').each(function(i) {
+                            var block = $(this)
+                            setTimeout(function() {
+                                block.addClass('animated fadeInDown')
+                            }, 100 * i)
+                        })
+                    }
+                    if(destination == 3) {
+                        $('.__sl3anim').each(function(i) {
+                            var block = $(this)
+                            $('.__sl3anim2').addClass('animated fadeInLeft')
+                            setTimeout(function() {
+                                block.addClass('animated fadeInUp')
+                            }, 100 * i)
+                        })
+                    }
+                    if(destination == 4) {
+                        $('.__sl4anim').each(function(i) {
+                            var block = $(this)
+                            setTimeout(function() {
+                                block.addClass('animated fadeInRight')
+                            }, 100 * i)
+                        })
+                    }
+                    if(destination == 5) {
+                        $('.__sl5anim').each(function(i) {
+                            var block = $(this)
+                            setTimeout(function() {
+                                block.addClass('animated fadeInLeft')
+                            }, 100 * i)
+                        })
+                    }
+                    if(destination == 6) {
+                        $('.__sl6anim').each(function(i) {
+                            var block = $(this)
+                            setTimeout(function() {
+                                block.addClass('animated fadeInUp')
+                            }, 100 * i)
+                        })
+                    }
+                }
             },
             afterLoad: function(origin, destination, direction){
                 fixedMenuControllerForSlider(destination)
@@ -239,6 +283,8 @@
 
         if(window.innerWidth < 1025) {
             if($('.slides-container')[0]) {
+                ismobile = true
+                $('body').removeClass('is--animatecss')
                 $.fn.fullpage.destroy('all');
             }
         }

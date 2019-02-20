@@ -15,8 +15,11 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <title>Продукция - Стройиндустрия</title>
+    <!-- <script src="dist/js/pace.min.js"></script> -->
     <link rel="stylesheet" href="dist/css/jquery.fullpage.min.css">
     <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="dist/css/aos.css">
+    <link rel="stylesheet" href="dist/css/animate.css">
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
@@ -60,7 +63,7 @@
                                 </a>
                             </div>
                             <div class="navbar__link">
-                                <a href="#">
+                                <a href="basket.html">
                                     <div class="navbar__link--icon">
                                         <svg class="svg-cart-dims svg is--cart">
                                             <use xlink:href="img/svg/sprites.svg#cart"></use>
@@ -276,7 +279,7 @@
 
                             </select>
                         </div>
-                        <table>
+                        <table class="is--default">
                             <thead>
                                 <tr>
                                     <th>Наименование</th>
@@ -357,7 +360,9 @@
                                     <td data-fieldname="Цена">2784</td>
                                     <td data-fieldname="Кол-во">
                                         <div class="input-table is--count">
-                                            <input type="number" min="1" value="1">
+                                            <button class="input-table-countbtn" data-action="-">-</button>
+                                            <input type="number" min="1" value="1" readonly>
+                                            <button class="input-table-countbtn" data-action="+">+</button>
                                         </div>
                                     </td>
                                     <td data-fieldname="Купить">
@@ -381,7 +386,9 @@
                                     <td data-fieldname="Цена">3538</td>
                                     <td data-fieldname="Кол-во">
                                         <div class="input-table is--count">
-                                            <input type="number" min="1" value="1">
+                                            <button class="input-table-countbtn" data-action="-">-</button>
+                                            <input type="number" min="1" value="1" readonly>
+                                            <button class="input-table-countbtn" data-action="+">+</button>
                                         </div>
                                     </td>
                                     <td data-fieldname="Купить">
@@ -405,7 +412,9 @@
                                     <td data-fieldname="Цена">2945</td>
                                     <td data-fieldname="Кол-во">
                                         <div class="input-table is--count">
-                                            <input type="number" min="1" value="1">
+                                            <button class="input-table-countbtn" data-action="-">-</button>
+                                            <input type="number" min="1" value="1" readonly>
+                                            <button class="input-table-countbtn" data-action="+">+</button>
                                         </div>
                                     </td>
                                     <td data-fieldname="Купить">
@@ -429,7 +438,9 @@
                                     <td data-fieldname="Цена">2945</td>
                                     <td data-fieldname="Кол-во">
                                         <div class="input-table is--count">
-                                            <input type="number" min="1" value="1">
+                                            <button class="input-table-countbtn" data-action="-">-</button>
+                                            <input type="number" min="1" value="1" readonly>
+                                            <button class="input-table-countbtn" data-action="+">+</button>
                                         </div>
                                     </td>
                                     <td data-fieldname="Купить">
@@ -453,7 +464,9 @@
                                     <td data-fieldname="Цена">2999</td>
                                     <td data-fieldname="Кол-во">
                                         <div class="input-table is--count">
-                                            <input type="number" min="1" value="1">
+                                            <button class="input-table-countbtn" data-action="-">-</button>
+                                            <input type="number" min="1" value="1" readonly>
+                                            <button class="input-table-countbtn" data-action="+">+</button>
                                         </div>
                                     </td>
                                     <td data-fieldname="Купить">
@@ -477,7 +490,9 @@
                                     <td data-fieldname="Цена">3081</td>
                                     <td data-fieldname="Кол-во">
                                         <div class="input-table is--count">
-                                            <input type="number" min="1" value="1">
+                                            <button class="input-table-countbtn" data-action="-">-</button>
+                                            <input type="number" min="1" value="1" readonly>
+                                            <button class="input-table-countbtn" data-action="+">+</button>
                                         </div>
                                     </td>
                                     <td data-fieldname="Купить">
@@ -501,7 +516,9 @@
                                     <td data-fieldname="Цена">4642</td>
                                     <td data-fieldname="Кол-во">
                                         <div class="input-table is--count">
-                                            <input type="number" min="1" value="1">
+                                            <button class="input-table-countbtn" data-action="-">-</button>
+                                            <input type="number" min="1" value="1" readonly>
+                                            <button class="input-table-countbtn" data-action="+">+</button>
                                         </div>
                                     </td>
                                     <td data-fieldname="Купить">
@@ -525,7 +542,9 @@
                                     <td data-fieldname="Цена">4642</td>
                                     <td data-fieldname="Кол-во">
                                         <div class="input-table is--count">
-                                            <input type="number" min="1" value="1">
+                                            <button class="input-table-countbtn" data-action="-">-</button>
+                                            <input type="number" min="1" value="1" readonly>
+                                            <button class="input-table-countbtn" data-action="+">+</button>
                                         </div>
                                     </td>
                                     <td data-fieldname="Купить">
@@ -549,7 +568,9 @@
                                     <td data-fieldname="Цена">4857</td>
                                     <td data-fieldname="Кол-во">
                                         <div class="input-table is--count">
-                                            <input type="number" min="1" value="1">
+                                            <button class="input-table-countbtn" data-action="-">-</button>
+                                            <input type="number" min="1" value="1" readonly>
+                                            <button class="input-table-countbtn" data-action="+">+</button>
                                         </div>
                                     </td>
                                     <td data-fieldname="Купить">
@@ -573,7 +594,9 @@
                                     <td data-fieldname="Цена">4451</td>
                                     <td data-fieldname="Кол-во">
                                         <div class="input-table is--count">
-                                            <input type="number" min="1" value="1">
+                                            <button class="input-table-countbtn" data-action="-">-</button>
+                                            <input type="number" min="1" value="1" readonly>
+                                            <button class="input-table-countbtn" data-action="+">+</button>
                                         </div>
                                     </td>
                                     <td data-fieldname="Купить">
@@ -597,7 +620,9 @@
                                     <td data-fieldname="Цена">5089</td>
                                     <td data-fieldname="Кол-во">
                                         <div class="input-table is--count">
-                                            <input type="number" min="1" value="1">
+                                            <button class="input-table-countbtn" data-action="-">-</button>
+                                            <input type="number" min="1" value="1" readonly>
+                                            <button class="input-table-countbtn" data-action="+">+</button>
                                         </div>
                                     </td>
                                     <td data-fieldname="Купить">
@@ -621,7 +646,9 @@
                                     <td data-fieldname="Цена">5289</td>
                                     <td data-fieldname="Кол-во">
                                         <div class="input-table is--count">
-                                            <input type="number" min="1" value="1">
+                                            <button class="input-table-countbtn" data-action="-">-</button>
+                                            <input type="number" min="1" value="1" readonly>
+                                            <button class="input-table-countbtn" data-action="+">+</button>
                                         </div>
                                     </td>
                                     <td data-fieldname="Купить">
@@ -736,9 +763,9 @@
             </div>
             <div class="form__inner">
                 <div class="form__wrap">
-                    <form action="#">
+                    <form action="#" data-parsley-validate="">
                         <div class="form__group is--three">
-                            <input type="text" id="name" name="name" placeholder="Имя">
+                            <input type="text" id="name" name="name" placeholder="Имя" required data-parsley-no-focus>
                             <label for="name" class="is--icon">
                                 <svg class="svg-fname-dims svg is--fname">
                                     <use xlink:href="img/svg/sprites.svg#fname"></use>
@@ -746,7 +773,7 @@
                             </label>
                         </div>
                         <div class="form__group is--three">
-                            <input type="text" id="phone" name="phone" placeholder="Номер">
+                            <input type="text" id="phone" name="phone" placeholder="Номер" required data-parsley-no-focus>
                             <label for="phone" class="is--icon">
                                 <svg class="svg-fphone-dims svg is--fphone">
                                     <use xlink:href="img/svg/sprites.svg#fphone"></use>
@@ -754,7 +781,7 @@
                             </label>
                         </div>
                         <div class="form__group is--three">
-                            <input type="email" id="email" name="email" placeholder="Почта">
+                            <input type="email" id="email" name="email" placeholder="Почта" required data-parsley-no-focus>
                             <label for="email" class="is--icon">
                                 <svg class="svg-femail-dims svg is--femail">
                                     <use xlink:href="img/svg/sprites.svg#femail"></use>
@@ -762,7 +789,7 @@
                             </label>
                         </div>
                         <div class="form__group is--one">
-                            <input type="text" id="comment" name="comment" placeholder="Комментарий">
+                            <input type="text" id="comment" name="comment" placeholder="Комментарий" required data-parsley-no-focus>
                             <label for="comment" class="is--icon">
                                 <svg class="svg-fcomment-dims svg is--fcomment">
                                     <use xlink:href="img/svg/sprites.svg#fcomment"></use>
@@ -862,7 +889,6 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="dist/js/mousewheel.js"></script>
     <script src="dist/js/slick.min.js"></script>
     <script src="dist/js/jquery.fullpage.min.js"></script>
     <script src="dist/js/scrolloverflow.min.js"></script>
@@ -871,8 +897,11 @@
     <script src="dist/js/TweenMax.min.js"></script>
     <script src="dist/js/TimelineMax.min.js"></script>
     <script src="dist/js/jquery.fancybox.min.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
+    <script src="dist/js/imask.js"></script>
+    <script src="dist/js/parsley.min.js"></script>
+    <script src="dist/js/i18n/ru.js"></script>
     <script src="dist/js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
     <script src="dist/js/svg4everybody.min.js"></script>
     <script>
         svg4everybody();

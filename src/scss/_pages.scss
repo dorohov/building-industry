@@ -516,7 +516,7 @@
         position: relative;
         left: 0;
         top: 0;
-        background: rgba(#0C498C, .5);
+        background: rgba(#0C498C, .8);
         padding: 60px 20px 0 100px;
         min-height: calc(100vh - 150px);
         &__bc {
@@ -526,6 +526,9 @@
             padding-left: 0;
             padding-right: 0;
             margin-bottom: 0;
+            &__title {
+                color: #fff;
+            }
         }
         &__addrs {
             ul {
@@ -538,13 +541,14 @@
                     font-family: 'Open Sans';
                     line-height: 22px;
                     font-size: 18px;
+                    color: #fff;
                     a {
-                        color: #000;
+                        color: #fff;
                     }
                 }
                 &.is--map {
                     &::before {
-                        content: url(../../img/svg/marker.svg);
+                        content: url(../../img/svg/marker_orange.svg);
                         position: absolute;
                         left: 0;
                         top: 8px;
@@ -552,7 +556,7 @@
                 }
                 &.is--phone {
                     &::before {
-                        content: url(../../img/svg/phone.svg);
+                        content: url(../../img/svg/phone_orange.svg);
                         position: absolute;
                         left: 0;
                         top: 5px;
@@ -560,7 +564,7 @@
                 }
                 &.is--mail {
                     &::before {
-                        content: url(../../img/svg/mail.svg);
+                        content: url(../../img/svg/mail_orange.svg);
                         position: absolute;
                         left: 0;
                         top: 5px;
@@ -570,6 +574,7 @@
         }
         &__form {
             max-width: 365px;
+            padding-top: 50px;
             .form__group {
                 padding-left: 0;
                 padding-right: 0;
@@ -579,15 +584,43 @@
                     padding-top: 20px;
                     text-align: left;
                 }
+                input {
+                    &[type="text"],
+                    &[type="email"] {
+                        color: #fff;
+                        border-bottom-color: #fff;
+                        &::placeholder {
+                            color: rgba(#fff, .5);
+                        }
+                        &:focus {
+                            border-color: #fff;
+                        }
+                    }
+                }
+            }
+            &__title {
+                line-height: 32px;
+                font-size: 22px;
+                letter-spacing: 0.02em;
+                color: #fff;
+                margin-bottom: 10px;
+            }
+            &__subtitle {
+                font-family: 'Open Sans';
+                color: #fff;
+                line-height: 20px;
+                font-size: 14px;
+                letter-spacing: 0.02em;
+                margin-bottom: 20px;
             }
         }
     }
 }
 
 #map {
-    height: 100%;
-    width: 100%;
-    position: absolute !important;
+    height: 1000px;
+    width: 1000px;
+    position: relative !important;
     top: 0;
     left: 0;
 }
@@ -1219,7 +1252,24 @@
                 color: #282828;
                 font-family: 'Open Sans';
                 font-weight: bold;
+                display: flex;
+                align-items: center;
+                span {
+                    display: block;
+                    font-size: 15px;
+                    padding: 4px 15px;
+                    border-radius: 20px;
+                    background: #EA8B00;
+                    line-height: 15px;
+                    font-weight: 400;
+                    margin-left: 20px;
+                    margin-top: 5px;
+                }
             }
+        }
+        table {
+            font-family: 'Open Sans';
+            margin-bottom: 100px;
         }
     }
 }
@@ -1417,6 +1467,23 @@
             &__addrs {
                 width: 50%;
             }
+            &__form {
+                padding-top: 0;
+                input[type="text"],
+                input[type="email"] {
+                    border-bottom-color: #000 !important;
+                    color: #000 !important;
+                    &::placeholder {
+                        color: #000 !important;
+                    }
+                }
+                input[type="submit"] {
+                    color: #fff !important;
+                }
+            }
+        }
+        * {
+            color: #000 !important;
         }
     }
     .history {
@@ -1669,6 +1736,9 @@
             &__form,
             &__addrs {
                 width: 100%;
+            }
+            &__form {
+                padding-top: 50px;
             }
             .heading {
                 &__title {
