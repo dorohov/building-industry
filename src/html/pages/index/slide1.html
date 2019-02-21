@@ -51,19 +51,30 @@
             <div class="in-slide1__desc is--id@@content_id">На наших заводах полный цикл производства — изделия, их узлы и детали проектируются, изготавливаются и проверяются  в пределах нашего предприятия.</div>
         }
     </div>
-    <div class="in-slide1__down">
-        @@include('../../items/down-link.html', {
-            "url": "1",
-            "type": "default"
-        })
-    </div>
+    @@if(content_id == 1) {
+        <div class="in-slide1__down">
+            @@include('../../items/down-link.html', {
+                "url": "1",
+                "type": "slider"
+            })
+        </div>
+    }
+    @@if(content_id != 1) {
+        <div class="in-slide1__down">
+            @@include('../../items/down-link.html', {
+                "url": "1",
+                "type": "default"
+            })
+        </div>
+    }
     @@if(content_id == 1) {
         <div class="in-slide1__nums">
             @@include('../../items/snums.html', {
                 "or": "ver",
                 "l1": "#in-sl2",
                 "l2": "#in-sl4",
-                "l3": "#in-sl5"
+                "l3": "#in-sl5",
+                "type": "slider"
             })
         </div>
     }

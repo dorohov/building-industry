@@ -201,7 +201,6 @@
         &__aside {
             max-width: 365px;
             width: 100%;
-            margin-right: 70px;
             &__inner {
                 background: #F5F6F7;
                 padding: 30px 50px;
@@ -218,6 +217,7 @@
                             color: #000;
                             cursor: pointer;
                             display: flex;
+                            white-space: nowrap;
                             &:hover {
                                 color: $primary-color;
                             }
@@ -228,6 +228,8 @@
         }
         &__table {
             width: 100%;
+            margin-left: 70px;
+            max-width: 1285px;
             margin-bottom: 150px;
         }
         &__categm {
@@ -298,7 +300,7 @@
             }
         }
     }
-}
+}   
 
 .wrapper {
     padding-top: 200px;
@@ -517,7 +519,7 @@
         left: 0;
         top: 0;
         background: rgba(#0C498C, .8);
-        padding: 60px 20px 0 100px;
+        padding: 60px 20px 60px 100px;
         min-height: calc(100vh - 150px);
         &__bc {
             margin-bottom: 40px;
@@ -618,9 +620,9 @@
 }
 
 #map {
-    height: 1000px;
-    width: 1000px;
-    position: relative !important;
+    height: 100%;
+    width: 100%;
+    position: absolute !important;
     top: 0;
     left: 0;
 }
@@ -985,6 +987,7 @@
         &__text {
             max-width: 700px;
             width: 100%;
+            margin-right: auto;
             p {
                 font-family: 'Open Sans';
                 line-height: 22px;

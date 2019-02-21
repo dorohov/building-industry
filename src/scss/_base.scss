@@ -69,6 +69,14 @@ img {
     visibility: hidden;
 }
 
+.map *,
+.fancybox-container * {
+    visibility: visible;
+}
+
+* {
+    font-style: normal !important;
+}
 
 @media (max-width: $resp768) {
     body {

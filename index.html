@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+    <script src="dist/js/pace.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -15,12 +16,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <title>Главная - Стройиндустрия</title>
-    <!-- <script src="dist/js/pace.min.js"></script> -->
-    <link rel="stylesheet" href="dist/css/jquery.fullpage.min.css">
-    <link rel="stylesheet" href="dist/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="dist/css/aos.css">
-    <link rel="stylesheet" href="dist/css/animate.css">
-    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 
 <body class="__nscroll is--animatecss">
@@ -144,24 +140,27 @@
 
 
             </div>
+
             <div class="in-slide1__down">
                 <div class="down-link">
                     <div class="down-link__inner">
-                        <a data-anchorid="1" class="is--default anchor-target">Вниз</a>
+                        <a data-anchorid="1" class="is--slider anchor-target">Вниз</a>
                     </div>
                 </div>
             </div>
 
+
+
             <div class="in-slide1__nums">
                 <ul class="snums is--ver">
-                    <li><a class="anchor-target" data-anchorid="0">01</a></li>
-                    <li><a class="anchor-target" data-anchorid="1">02</a></li>
-                    <li><a class="anchor-target" data-anchorid="2">03</a></li>
+                    <li><a class="anchor-target is--slider is--snums" data-anchorid="1">01</a></li>
+                    <li><a class="anchor-target is--slider is--snums" data-anchorid="2">02</a></li>
+                    <li><a class="anchor-target is--slider is--snums" data-anchorid="3">03</a></li>
                 </ul>
             </div>
 
         </div>
-        <div class="in-slide2 slide section" id="in-sl2">
+        <div class="in-slide2 slide section __anchor-block" data-anchorid="1" id="in-sl2">
             <div class="in-slide2__inner">
                 <div class="in-slide2__blocks">
                     <div class="in-slide2__block is--bold is--top">
@@ -201,7 +200,7 @@
                     <div class="in-slide2__block">
                         <div class="in-slide2__block__inner">
                             <div class="in-slide2__block__title">1 650 000 тн</div>
-                            <div class="in-slide2__block__desc">Железобетонных изделий произвели за 56—летнюю историю завода</div>
+                            <div class="in-slide2__block__desc">Железобетонных изделий произвели за <br> 56—летнюю историю завода</div>
                         </div>
                     </div>
                     <div class="in-slide2__block">
@@ -214,19 +213,19 @@
                 </div>
             </div>
         </div>
-        <div class="in-slide3 slide is--ndark section" id="in-sl3">
+        <div class="in-slide3 slide is--ndark section __anchor-block" data-anchorid="2" id="in-sl3">
             <div class="in-slide3__down">
                 <div class="down-link">
                     <div class="down-link__inner">
-                        <a data-anchorid="3" class="is--black anchor-target">Вниз</a>
+                        <a data-anchorid="3" class="is--black is--slider anchor-target">Вниз</a>
                     </div>
                 </div>
             </div>
             <div class="in-slide3__nums">
                 <ul class="snums is--hor">
-                    <li><a class="anchor-target" data-anchorid="0">01</a></li>
-                    <li><a class="anchor-target" data-anchorid="1">02</a></li>
-                    <li><a class="anchor-target" data-anchorid="2">03</a></li>
+                    <li><a class="anchor-target is--slider is--snums" data-anchorid="1">01</a></li>
+                    <li><a class="anchor-target is--slider is--snums" data-anchorid="2">02</a></li>
+                    <li><a class="anchor-target is--slider is--snums" data-anchorid="3">03</a></li>
                 </ul>
             </div>
             <div class="in-slide3__inner">
@@ -251,19 +250,19 @@
                 </div>
             </div>
         </div>
-        <div class="in-slide4 slide section" id="in-sl4">
+        <div class="in-slide4 slide section __anchor-block" id="in-sl4" data-anchorid="3">
             <div class="in-slide4__down">
                 <div class="down-link">
                     <div class="down-link__inner">
-                        <a data-anchorid="4" class="is--black anchor-target">Вниз</a>
+                        <a data-anchorid="4" class="is--black is--slider anchor-target">Вниз</a>
                     </div>
                 </div>
             </div>
             <div class="in-slide4__nums">
                 <ul class="snums is--hor">
-                    <li><a class="anchor-target" data-anchorid="0">01</a></li>
-                    <li><a class="anchor-target" data-anchorid="1">02</a></li>
-                    <li><a class="anchor-target" data-anchorid="2">03</a></li>
+                    <li><a class="anchor-target is--slider is--snums" data-anchorid="1">01</a></li>
+                    <li><a class="anchor-target is--slider is--snums" data-anchorid="2">02</a></li>
+                    <li><a class="anchor-target is--slider is--snums" data-anchorid="3">03</a></li>
                 </ul>
             </div>
             <div class="in-slide4__bg1 __sl4anim">
@@ -279,18 +278,18 @@
                 </div>
             </div>
         </div>
-        <div class="in-slide5 slide section" id="in-sl5">
+        <div class="in-slide5 slide section __anchor-block" id="in-sl5" data-anchorid="4">
             <div class="in-slide5__nums">
                 <ul class="snums is--hor">
-                    <li><a class="anchor-target" data-anchorid="0">01</a></li>
-                    <li><a class="anchor-target" data-anchorid="1">02</a></li>
-                    <li><a class="anchor-target" data-anchorid="2">03</a></li>
+                    <li><a class="anchor-target is--slider is--snums" data-anchorid="1">01</a></li>
+                    <li><a class="anchor-target is--slider is--snums" data-anchorid="2">02</a></li>
+                    <li><a class="anchor-target is--slider is--snums" data-anchorid="3">03</a></li>
                 </ul>
             </div>
             <div class="in-slide5__down">
                 <div class="down-link">
                     <div class="down-link__inner">
-                        <a data-anchorid="5" class="is--white anchor-target">Вниз</a>
+                        <a data-anchorid="5" class="is--white is--slider anchor-target">Вниз</a>
                     </div>
                 </div>
             </div>
@@ -313,20 +312,16 @@
 
             </div>
         </div>
-        <div class="in-slide6 slide section" id="in-sl6">
+        <div class="in-slide6 slide section __anchor-block" id="in-sl6" data-anchorid="5">
             <div class="in-slide6__inner">
                 <div class="in-slide6__down">
-                    <div class="down-link">
-                        <div class="down-link__inner">
-                            <a data-anchorid="next" class="is--black anchor-target">Вниз</a>
-                        </div>
-                    </div>
+
                 </div>
                 <div class="in-slide6__nums">
                     <ul class="snums is--hor">
-                        <li><a class="anchor-target" data-anchorid="0">01</a></li>
-                        <li><a class="anchor-target" data-anchorid="1">02</a></li>
-                        <li><a class="anchor-target" data-anchorid="2">03</a></li>
+                        <li><a class="anchor-target is--slider is--snums" data-anchorid="1">01</a></li>
+                        <li><a class="anchor-target is--slider is--snums" data-anchorid="2">02</a></li>
+                        <li><a class="anchor-target is--slider is--snums" data-anchorid="3">03</a></li>
                     </ul>
                 </div>
                 <div class="in-slide6__block __sl6anim">
@@ -479,20 +474,8 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
             <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-            <script src="dist/js/slick.min.js"></script>
-            <script src="dist/js/jquery.fullpage.min.js"></script>
-            <script src="dist/js/scrolloverflow.min.js"></script>
-            <script src="dist/js/jquery.gsap.min.js"></script>
-            <script src="dist/js/CSSPlugin.min.js"></script>
-            <script src="dist/js/TweenMax.min.js"></script>
-            <script src="dist/js/TimelineMax.min.js"></script>
-            <script src="dist/js/jquery.fancybox.min.js"></script>
-            <script src="dist/js/imask.js"></script>
-            <script src="dist/js/parsley.min.js"></script>
-            <script src="dist/js/i18n/ru.js"></script>
-            <script src="dist/js/main.js"></script>
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
-            <script src="dist/js/svg4everybody.min.js"></script>
+            <script src="dist/js/bundle-min.js"></script>
             <script>
                 svg4everybody();
             </script>

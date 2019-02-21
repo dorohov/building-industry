@@ -15,7 +15,9 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     notify = require("gulp-notify"),
     svgmin = require('gulp-svgmin'),
-	cheerio = require('gulp-cheerio'),
+    cheerio = require('gulp-cheerio'),
+    concatCss = require('gulp-concat-css'),
+    stripCssComments = require('gulp-strip-css-comments'),
 	replace = require('gulp-replace'),
     minify = require('gulp-minify'),
     strip_comments = require('gulp-strip-json-comments'),
@@ -131,14 +133,30 @@ function browser_sync() {
     browserSync.watch('./', browserSync.reload)
 }
 
+function createBundleCss() {
+    return gulp.src(['./dist/css/*.css', '!./dist/css/style.min.css'])
+            .pipe(concatCss('style.min.css'))
+            .pipe(minifyCSS())
+            .pipe(stripCssComments())
+            .pipe(gulp.dest('dist/css'))
+            .on('end', browserSync.reload)
+}
+
 function createBundleJs() {
     return gulp.src([
                 'dist/js/slick.min.js',
+                'dist/js/jquery.fullpage.min.js',
+                'dist/js/scrolloverflow.min.js',
+                'dist/js/jquery.gsap.min.js',
+                'dist/js/CSSPlugin.min.js',
+                'dist/js/TweenMax.min.js',
+                'dist/js/TimelineMax.min.js',
+                'dist/js/jquery.fancybox.min.js',
+                'dist/js/imask.js',
                 'dist/js/parsley.min.js',
                 'dist/js/i18n/ru.js',
-                'dist/js/imask.js',
-                'dist/js/svg4everybody.min.js',
-                'dist/js/main.js'
+                'dist/js/main.js',
+                'dist/js/svg4everybody.min.js'
             ])
             .pipe(sourcemaps.init())
             .pipe(concat('bundle.js'))
@@ -153,19 +171,21 @@ gulp.task('imageMinify', imageMinify)
 gulp.task('html', html)
 gulp.task('js', js)
 gulp.task('createBundleJs', createBundleJs)
+gulp.task('createBundleCss', createBundleCss)
 gulp.task('browser_sync', browser_sync)
 
 gulp.task('build', function() {
     gulp.watch('src/html/**/*.html', gulp.series('html'))
     gulp.watch('src/scss/**/*.scss', gulp.series('css'))
     gulp.watch(assets.js, gulp.series('js'))
-    // gulp.watch('dist/js/main.js', gulp.series('createBundleJs'))
+    gulp.watch('dist/js/main.js', gulp.series('createBundleJs'))
+    gulp.watch('dist/css/style.css', gulp.series('createBundleCss'))
     gulp.watch(assets.svg, gulp.series('svgMap'))
     gulp.watch(assets.images, gulp.series('imageMinify'))
 })
 
 gulp.task('default', gulp.series(
-    gulp.parallel('html', 'css', 'js', 'svgMap', 'imageMinify'),
-    // gulp.parallel('html', 'css', 'js', 'createBundleJs', 'svgMap', 'imageMinify'),
+    // gulp.parallel('html', 'css', 'js', 'svgMap', 'imageMinify'),
+    gulp.parallel('html', 'css', 'js', 'createBundleJs', 'createBundleCss', 'svgMap', 'imageMinify'),
     gulp.parallel('build', 'browser_sync')
 ))
