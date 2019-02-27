@@ -25,7 +25,7 @@
             top: 0;
             content: '';
             mix-blend-mode: multiply;
-            z-index: 10;
+            z-index: 0;
         }
         &::after {
             background: #1F5087;
@@ -37,7 +37,7 @@
             top: 0;
             content: '';
             mix-blend-mode: multiply;
-            z-index: 10;
+            z-index: 0;
         }
         &__inner {
             @extend .container;
@@ -217,7 +217,7 @@
             display: block;
             position: absolute;
             right: 360px;
-            z-index: 10;
+            z-index: -1;
             top: 0;
             background: #fff;
         }
@@ -912,16 +912,28 @@
             padding-top: 0;
             padding-bottom: 0;
             &__inner {
+                background: url(../../img/sl3photo.jpg);
+                background-size: cover;
                 &__title {
                     font-size: 26px;
                     line-height: 30px;
                     margin-bottom: 20px;
+                    color: #fff;
                 }
                 &__wrap {
                     padding-top: 50px;
                 }
                 &__desc {
                     margin-bottom: 40px;
+                    p {
+                        color: #fff;
+                    }
+                }
+                &__photo {
+                    display: none;
+                }
+                &::before {
+                    content: none;
                 }
             }
         }

@@ -99,17 +99,17 @@
                                 <td data-fieldname="Длинна -">`+products_table[i].length+`</td>
                                 <td data-fieldname="Ширина -">`+products_table[i].width+`</td>
                                 <td data-fieldname="Высота -">`+products_table[i].height+`</td>
-                                <td data-fieldname="Нагрузка">`+products_table[i].load+`</td>
-                                <td data-fieldname="Вес">`+products_table[i].weight+`</td>
-                                <td data-fieldname="Цена">`+products_table[i].price+`</td>
-                                <td data-fieldname="Кол-во">
+                                <td data-fieldname="Нагрузка - ">`+products_table[i].load+`</td>
+                                <td data-fieldname="Вес - ">`+products_table[i].weight+`</td>
+                                <td data-fieldname="Цена - ">`+products_table[i].price+`</td>
+                                <td data-fieldname="Кол-во" class="is--count">
                                     <div class="input-table is--count">
                                         <button class="input-table-countbtn" data-action="-">-</button>
                                         <input type="number" min="1" value="1" readonly>
                                         <button class="input-table-countbtn" data-action="+">+</button>
                                     </div>
                                 </td>
-                                <td data-fieldname="Купить">
+                                <td data-fieldname="Купить" class="is--buy">
                                     <div class="table-buy_btn">
                                         <button>
                                             @@include('../../items/svg.html', {"name": "shopping-cart"})

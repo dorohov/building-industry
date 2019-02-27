@@ -10,6 +10,9 @@
         &__inner {
             display: flex;
         }
+        .footer__cop {
+            display: none;
+        }
     }
     &__bottom {
         padding: 30px 0;
@@ -132,16 +135,39 @@
             padding: 20px 0;
             &__inner {
                 text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .footer__cop {
+                display: block;
+                margin: 0;
+                padding-top: 20px;
+                width: 100%;
+                text-align: center;
+                line-height: 20px;
+            }
+        }
+        &__bottom {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            &__inner {
+                justify-content: center;
             }
         }
         &__logo {
             width: 100%;
+            svg {
+                max-height: 60px;
+                height: 100%;
+                width: 80px;
+            }
         }
         &__menus {
             display: none;
         }
         &__cop {
             margin-right: 20px;
+            display: none;
         }
     }
     .dorohov {

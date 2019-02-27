@@ -147,7 +147,8 @@ table.is--default {
         tbody {
             display: block;
             tr {
-                display: block;
+                display: flex;
+                flex-wrap: wrap;
                 width: 100%;
                 border: 1px solid $primary-color;
                 margin-bottom: 20px;
@@ -180,6 +181,10 @@ table.is--default {
                     select {
                         width: 100% !important;
                     }
+                    &.is--count,
+                    &.is--buy {
+                        width: auto;
+                    }
                 }
                 &::before {
                     content: attr(data-fieldname);
@@ -188,12 +193,13 @@ table.is--default {
                     background: #0C498C;
                     color: #fff;
                     font-weight: bold;
+                    width: 100%;
                 }
             }
         }
     }
     .__th {
-        display: none;
+        display: none !important;
     }
 }
 

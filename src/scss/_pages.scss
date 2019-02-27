@@ -1414,6 +1414,13 @@
             }
         }
     }
+    .products {
+        &__table {
+            &__table {
+                margin-left: 0;
+            }
+        }
+    }
 }
 
 @media (max-width: $resp1200) {
@@ -1760,6 +1767,7 @@
     }
     .objects {
         &__list {
+            margin: 0 !important;
             &__item {
                 width: 100% !important;
             }
@@ -1799,6 +1807,7 @@
     }
     .wrapper {
         padding-top: 120px;
+        padding-bottom: 30px;
     }
     .about {
         &__top {
