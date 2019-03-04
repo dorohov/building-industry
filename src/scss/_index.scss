@@ -145,6 +145,13 @@
             &.is--top {
                 margin-bottom: 180px;
             }
+            &.is--bottom {
+                .in-slide2__block {
+                    &__title {
+                        min-height: 95px;
+                    }
+                }
+            }
             &.is--bold {
                 .in-slide2__block {
                     &__title {
@@ -419,6 +426,7 @@
             position: absolute;
             background: url(../../img/slide5_bg_left.jpg);
             background-size: cover;
+            z-index: -10;
             &::before {
                 position: absolute;
                 top: 0;
@@ -491,7 +499,7 @@
             margin: 0 360px 0 0;
             margin-left: auto;
             height: 100vh;
-            background: url(../../img/slide6_bg_center.jpg);
+            background-image: url(../../img/slide6_bg_center.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             position: relative;
@@ -815,6 +823,9 @@
             &__block {
                 max-width: 400px;
                 width: 100%;
+                &__title {
+                    min-height: 0 !important;
+                }
             }
         }
         &-slide5 {
@@ -946,6 +957,7 @@
             }
             &__inner {
                 padding: 50px 15px;
+                max-width: 100%;
             }
             &__title {
                 font-size: 26px;
@@ -969,6 +981,7 @@
             }
             &__wrap {
                 padding: 120px 15px;
+                max-width: 100%;
             }
         }
         &-slide6 {
@@ -988,6 +1001,13 @@
                     height: 100%;
                     width: 100%;
                     position: absolute;
+                    z-index: 10;
+                }
+                &__title,
+                &__text,
+                &__btn {
+                    z-index: 100;
+                    position: relative;
                 }
                 &__title {
                     font-size: 26px;
@@ -1001,6 +1021,34 @@
                         line-height: 17px;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-height: 850px) {
+    .down-link,
+    .snums {
+        display: none !important;
+    }
+}
+
+@media (max-width: 1250px) {
+    .in {
+        &-slide4 {
+            &::after {
+                content: none;
+            }
+        }
+        &-slide5 {
+            &__bg1 {
+                &::after {
+                    width: 100%;
+                    right: 0;
+                }
+            }
+            &::after {
+                content: none;
             }
         }
     }

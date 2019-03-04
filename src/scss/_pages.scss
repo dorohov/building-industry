@@ -1368,6 +1368,8 @@
     }
     .map {
         &__container {
+            padding-left: 30px !important;
+            padding-right: 30px !important;
             .heading {
                 &__title {
                     font-size: 30px;
@@ -1494,6 +1496,11 @@
         }
         * {
             color: #000 !important;
+        }
+        .button {
+            &:hover {
+                color: #000 !important;
+            }
         }
     }
     .history {
