@@ -203,6 +203,11 @@ header {
                 }
             }
         }
+        &.is--basket {
+            .navbar__link--icon {
+                padding-top: 0;
+            }
+        }
     }
     &__btnmenu {
         width: 230px;
