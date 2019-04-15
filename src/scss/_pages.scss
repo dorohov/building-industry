@@ -1274,6 +1274,19 @@
             margin-bottom: 100px;
         }
     }
+    &__btn {
+        display: flex;
+        margin-bottom: 50px;
+        button {
+            margin-left: auto;
+        }
+    }
+    &__form {
+        display: none;
+        .form {
+            padding-top: 0;
+        }
+    }
 }
 
 @media (max-width: 1500px) {

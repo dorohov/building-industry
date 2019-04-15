@@ -5,6 +5,7 @@ table {
     font-weight: normal;
     font-family: 'Open Sans';
     &.is--basket {
+        margin-bottom: 50px !important;
         thead {
             background: #F3F6F9;
             tr {
@@ -215,6 +216,7 @@ table.is--default {
     }
     table {
         &.is--basket {
+            margin-bottom: 20px !important;
             thead {
                 display: none;
             }

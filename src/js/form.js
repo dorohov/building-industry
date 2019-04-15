@@ -22,6 +22,10 @@
         });
 
         $('form').parsley()
+
+        $('#orderBtn').on('click', function() {
+            $('.basket__form').slideToggle();
+        })
             
     })
 })(jQuery);

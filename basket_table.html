@@ -255,6 +255,74 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="basket__btn">
+                    <button class="button is--msmall" id="orderBtn">Заказать</button>
+                </div>
+            </div>
+        </div>
+        <div class="basket__form">
+            <div class="form slides-end" id="form">
+                <div class="form__heading">
+                    <div class="heading is--center">
+                        <div class="heading__title">Оформить заявку</div>
+
+                        <div class="heading__subtitle">Оставьте заявку, мы свяжемся с Вами и рассчитаем стоимость в течение 1 часа!</div>
+
+                    </div>
+                </div>
+                <div class="form__inner">
+                    <div class="form__wrap">
+                        <form action="#" data-parsley-validate="">
+                            <div class="form__group is--three">
+                                <input type="text" id="name" name="name" placeholder="Имя" required data-parsley-no-focus>
+                                <label for="name" class="is--icon">
+                                    <svg class="svg-fname-dims svg is--fname">
+                                        <use xlink:href="img/svg/sprites.svg#fname"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="form__group is--three">
+                                <input type="text" id="phone" name="phone" placeholder="Номер" required data-parsley-no-focus>
+                                <label for="phone" class="is--icon">
+                                    <svg class="svg-fphone-dims svg is--fphone">
+                                        <use xlink:href="img/svg/sprites.svg#fphone"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="form__group is--three">
+                                <input type="email" id="email" name="email" placeholder="Почта" required data-parsley-no-focus>
+                                <label for="email" class="is--icon">
+                                    <svg class="svg-femail-dims svg is--femail">
+                                        <use xlink:href="img/svg/sprites.svg#femail"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="form__group is--one">
+                                <input type="text" id="comment" name="comment" placeholder="Комментарий" required data-parsley-no-focus>
+                                <label for="comment" class="is--icon">
+                                    <svg class="svg-fcomment-dims svg is--fcomment">
+                                        <use xlink:href="img/svg/sprites.svg#fcomment"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="form__group is--one">
+                                <label for="file" class="is--field is--file-label">Прикрепить файл</label>
+                                <input type="file" id="file" name="file">
+                                <label for="file" class="is--icon">
+                                    <svg class="svg-ffile-dims svg is--ffile">
+                                        <use xlink:href="img/svg/sprites.svg#ffile"></use>
+                                    </svg>
+                                </label>
+                            </div>
+                            <div class="form__group is--submit">
+                                <input type="submit" value="Подобрать" class="button is--msmall">
+                                <div class="form__group__text">
+                                    Нажимая на кнопку «Отправить», Вы соглашаетесь с правилами <a href="#">обработки персональных данных</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
