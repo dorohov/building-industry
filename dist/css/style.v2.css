@@ -7,3 +7,11 @@
 .product__item__name {
     min-height: 64px;
 }
+
+.footer__menu__list ul li a {
+    white-space: normal;
+}
+
+.footer__menus {
+    margin-right: 40px;
+}
