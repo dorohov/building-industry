@@ -1,0 +1,9 @@
+.in-slide1__desc.is--id1 {
+    max-width: 70%;
+    line-height: 28px;
+    font-size: 24px;
+}
+
+.product__item__name {
+    min-height: 64px;
+}
