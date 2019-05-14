@@ -52,7 +52,7 @@ header {
                 a {
                     background: #E7EDF3;
                     width: auto;
-                    svg {
+                    img {
                         height: 70px;
                         width: 190px;
                     }
@@ -163,6 +163,10 @@ header {
             background: #fff;
             align-items: center;
             justify-content: center;
+            img {
+                width: 100px;
+                height: auto;
+            }
         }
     }
     &__content {
