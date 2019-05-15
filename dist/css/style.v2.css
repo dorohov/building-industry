@@ -19,3 +19,12 @@
 .basket__btn {
     align-items: flex-start;
 }
+
+.products__table__aside__inner ul li {
+    margin-bottom: 15px;
+}
+
+.products__table__aside__inner ul li a {
+    line-height: 18px;
+    white-space: normal;
+}
