@@ -28,3 +28,7 @@
     line-height: 18px;
     white-space: normal;
 }
+
+.basket__btn .button.is--prev{
+    margin: 0 auto 0 0 !important;
+}
